@@ -47,28 +47,42 @@ export default function Home() {
             </section>
 
             {/* Profile Summary */}
-            <section className="py-16 px-6 bg-white max-w-4xl mx-auto">
-                <h2 className="text-2xl font-semibold mb-8 text-center">전문가 프로필</h2>
-                <div className="flex flex-col md:flex-row items-center justify-center gap-8">
-                    {/* 컨설턴트 이미지 */}
-                    <div className="w-full md:w-1/3 flex justify-center">
-                        <div className="relative w-96 h-96 overflow-hidden">
-                            <img
-                                src="/img/desk_front.jpg"
-                                alt="전문 컨설턴트"
-                                className="object-cover w-full h-full"
-                            />
-                        </div>
+            <section className="bg-[#f9f9f9] py-20 px-6">
+                <div className="max-w-5xl mx-auto">
+                    {/* 제목 */}
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl font-bold text-[#4a2e21]">전문가 프로필</h2>
                     </div>
 
-                    {/* 프로필 정보 */}
-                    <div className="w-full md:w-1/2">
-                        <ul className="list-disc list-inside text-gray-700 text-base space-y-3">
-                            <li>전직 대기업 인사팀 출신</li>
-                            <li>누적 컨설팅 300+건 이상</li>
-                            <li>합격자 배출 기업: SK, 현대, LG, 한국전력 등</li>
-                            <li>자소서 피드백 + 면접 모의고사 완전 대응</li>
-                        </ul>
+                    {/* 좌우 레이아웃 */}
+                    <div className="flex justify-center items-center">
+                        {/* 이미지 (오른쪽으로 10px margin) */}
+                        <div className="w-1/2 flex justify-end pr-[20px]">
+                            <div className="w-[220px] rounded-xl overflow-hidden shadow-md">
+                                <img
+                                    src="/img/desk_front.jpg"
+                                    alt="전문 컨설턴트"
+                                    className="object-cover w-full h-full"
+                                />
+                            </div>
+                        </div>
+
+                        {/* 내용 (왼쪽으로 10px margin) */}
+                        <div className="w-1/2 flex justify-start pl-[20px] ">
+                            <ul className="text-gray-800 text-base space-y-4">
+                                {[
+                                    "전직 대기업 인사팀 출신",
+                                    "누적 컨설팅 300+건 이상",
+                                    "합격자 배출 기업: SK, 현대, LG, 한국전력 등",
+                                    "자소서 피드백 + 면접 모의고사 완전 대응",
+                                ].map((text, i) => (
+                                    <li key={i} className="flex items-start gap-2">
+                                        <span className="text-[#4a2e21] mt-1">✔</span>
+                                        {text}
+                                    </li>
+                                ))}
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
