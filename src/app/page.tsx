@@ -89,7 +89,7 @@ export default function Home() {
 
             {/* Service Cards */}
             <section className="bg-[#fdfaf2] py-16 px-6">
-                <h2 className="text-2xl font-semibold text-center mb-12">제공 서비스</h2>
+                <h2 className="text-3xl font-bold text-[#4a2e21] text-center mb-12">제공 서비스</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
                     {[
                         {
@@ -115,7 +115,7 @@ export default function Home() {
 
             {/* Testimonials - Card Slider */}
             <section className="py-20 px-6 bg-white">
-                <h2 className="text-2xl font-semibold text-center mb-12">이용자 후기</h2>
+                <h2 className="text-3xl font-bold text-[#4a2e21] text-center mb-12">이용자 후기</h2>
 
                 {/* SEO를 위한 실제 후기 데이터 (스크린 리더와 검색 엔진용) */}
                 <div className="sr-only">
@@ -135,7 +135,7 @@ export default function Home() {
 
             {/* CTA Section */}
             <section className="bg-[#f3f1e7] text-center py-24 px-6">
-                <h2 className="text-3xl font-bold mb-4 text-[#4a2e21]">
+                <h2 className="text-3xl font-bold mb-4 text-[#4a2e21] p-5">
                     당신의 합격, 지금 시작해보세요.
                 </h2>
                 <button className="bg-[#4a2e21] text-white px-8 py-4 rounded-full text-lg hover:bg-[#341a12] transition">
