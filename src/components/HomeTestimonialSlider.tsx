@@ -91,19 +91,27 @@ export default function TestimonialSlider({ testimonials }: { testimonials: Test
                 {/* 좌우 화살표 버튼 */}
                 <button
                     onClick={prevSlide}
-                    className="absolute left-0 top-1/2 -translate-y-1/2 bg-white border border-gray-300 rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-50"
+                    className="absolute left-0 top-1/2 -translate-y-1/2 flex items-center justify-center cursor-pointer transition-all duration-200"
                     aria-label="이전 후기"
                     disabled={currentSlide === 0}
                 >
-                    <span className="text-xl">&lt;</span>
+                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"
+                         className="transition-colors duration-200 hover:text-[#582D26] group">
+                        <circle cx="19" cy="19" r="18.5" stroke="currentColor" className="text-[#6B3F36] group-hover:text-[#582D26]"></circle>
+                        <path d="M21 13L15 19L21 25" stroke="currentColor" className="text-[#6B3F36] group-hover:text-[#582D26]" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
                 </button>
                 <button
                     onClick={nextSlide}
-                    className="absolute right-0 top-1/2 -translate-y-1/2 bg-white border border-gray-300 rounded-full w-10 h-10 flex items-center justify-center shadow-md hover:bg-gray-50"
+                    className="absolute right-0 top-1/2 -translate-y-1/2 flex items-center justify-center cursor-pointer transition-all duration-200"
                     aria-label="다음 후기"
                     disabled={currentSlide >= testimonials.length - itemsPerView}
                 >
-                    <span className="text-xl">&gt;</span>
+                    <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"
+                         className="transition-colors duration-200 hover:text-[#582D26] group">
+                        <circle cx="19" cy="19" r="18.5" stroke="currentColor" className="text-[#6B3F36] group-hover:text-[#582D26]"></circle>
+                        <path d="M17 25L23 19L17 13" stroke="currentColor" className="text-[#6B3F36] group-hover:text-[#582D26]" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
                 </button>
             </div>
         </div>
