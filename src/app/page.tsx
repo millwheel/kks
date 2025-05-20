@@ -34,12 +34,12 @@ export default function Home() {
         <main className="bg-white text-gray-900 min-h-screen flex flex-col">
             {/* Hero Section */}
             <section className="bg-[#f3f1e7] py-20 px-6 text-center">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#4a2e21]">
+                <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#4a2e21] p-5">
                     합격을 부르는 자기소개서와 면접 컨설팅
                 </h1>
                 <p className="text-lg text-[#4a2e21] mb-6">
                     SK, 공기업, 대기업 최종 합격자 배출!<br />
-                    실전 중심 맞춤형 피드백으로 당신의 합격을 이끕니다.
+                    실전 중심 맞춤형 피드백으로 당신의 합격을 이끕니다. <br />
                 </p>
                 <button className="bg-[#4a2e21] text-white px-6 py-3 rounded-full text-lg hover:bg-[#341a12] transition">
                     무료 상담 신청하기
