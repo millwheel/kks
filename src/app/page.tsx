@@ -48,13 +48,29 @@ export default function Home() {
 
             {/* Profile Summary */}
             <section className="py-16 px-6 bg-white max-w-4xl mx-auto">
-                <h2 className="text-2xl font-semibold mb-4 text-center">전문가 프로필</h2>
-                <ul className="list-disc list-inside text-gray-700 text-base space-y-2">
-                    <li>전직 대기업 인사팀 출신</li>
-                    <li>누적 컨설팅 300+건 이상</li>
-                    <li>합격자 배출 기업: SK, 현대, LG, 한국전력 등</li>
-                    <li>자소서 피드백 + 면접 모의고사 완전 대응</li>
-                </ul>
+                <h2 className="text-2xl font-semibold mb-8 text-center">전문가 프로필</h2>
+                <div className="flex flex-col md:flex-row items-center justify-center gap-8">
+                    {/* 컨설턴트 이미지 */}
+                    <div className="w-full md:w-1/3 flex justify-center">
+                        <div className="relative w-96 h-96 overflow-hidden">
+                            <img
+                                src="/img/desk_front.jpg"
+                                alt="전문 컨설턴트"
+                                className="object-cover w-full h-full"
+                            />
+                        </div>
+                    </div>
+
+                    {/* 프로필 정보 */}
+                    <div className="w-full md:w-1/2">
+                        <ul className="list-disc list-inside text-gray-700 text-base space-y-3">
+                            <li>전직 대기업 인사팀 출신</li>
+                            <li>누적 컨설팅 300+건 이상</li>
+                            <li>합격자 배출 기업: SK, 현대, LG, 한국전력 등</li>
+                            <li>자소서 피드백 + 면접 모의고사 완전 대응</li>
+                        </ul>
+                    </div>
+                </div>
             </section>
 
             {/* Service Cards */}
