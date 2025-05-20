@@ -98,7 +98,7 @@ export default function TestimonialSlider({ testimonials }: { testimonials: Test
                     <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"
                          className="transition-colors duration-200 hover:text-[#582D26] group">
                         <circle cx="19" cy="19" r="18.5" stroke="currentColor" className="text-[#6B3F36] group-hover:text-[#582D26]"></circle>
-                        <path d="M21 13L15 19L21 25" stroke="currentColor" className="text-[#6B3F36] group-hover:text-[#582D26]" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M21 13L15 19L21 25" stroke="currentColor" className="text-[#6B3F36] group-hover:text-[#582D26]" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
                     </svg>
                 </button>
                 <button
@@ -110,7 +110,7 @@ export default function TestimonialSlider({ testimonials }: { testimonials: Test
                     <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"
                          className="transition-colors duration-200 hover:text-[#582D26] group">
                         <circle cx="19" cy="19" r="18.5" stroke="currentColor" className="text-[#6B3F36] group-hover:text-[#582D26]"></circle>
-                        <path d="M17 25L23 19L17 13" stroke="currentColor" className="text-[#6B3F36] group-hover:text-[#582D26]" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                        <path d="M17 25L23 19L17 13" stroke="currentColor" className="text-[#6B3F36] group-hover:text-[#582D26]" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
                     </svg>
                 </button>
             </div>

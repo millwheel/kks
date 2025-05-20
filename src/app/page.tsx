@@ -145,9 +145,9 @@ export default function Home() {
 
             {/* Footer */}
             <footer className="bg-[#4a2e21] text-white py-12 px-6 text-center text-sm">
-                <p className="font-semibold mb-2">자기소개서/면접 컨설턴트 홍보 페이지</p>
+                <p className="font-semibold mb-2">대기업김과장</p>
                 <p>이메일: kks7180@naver.com</p>
-                <p className="text-xs mt-4">© 2025 Consultant. All rights reserved.</p>
+                <p className="text-xs mt-4">COPYRIGHT 2025. 대기업김과장 All rights reserved.</p>
             </footer>
         </main>
     );
