@@ -69,7 +69,10 @@ export default function TestimonialSlider({ testimonials }: { testimonials: Test
                                     <div className="mt-auto">
                                         <div className="flex items-center mt-4">
                                             <div className="bg-[#4a2e21] text-white w-8 h-8 rounded-full flex items-center justify-center mr-2">
-                                                <span className="text-xs">사용자</span>
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" fill="white"/>
+                                                    <path d="M12 14C7.58172 14 4 17.5817 4 22H20C20 17.5817 16.4183 14 12 14Z" fill="white"/>
+                                                </svg>
                                             </div>
                                             <p className="text-sm font-semibold text-gray-800">{item.name}</p>
                                             <div className="ml-auto flex">
