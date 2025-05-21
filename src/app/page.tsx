@@ -41,7 +41,7 @@ export default function Home() {
                     SK, 공기업, 대기업 최종 합격자 배출!<br />
                     실전 중심 맞춤형 피드백으로 당신의 합격을 이끕니다. <br />
                 </p>
-                <button className="bg-[#4655C7] text-white px-6 py-3 rounded-full text-lg hover:bg-[#344199] transition">
+                <button className="bg-[#4655C7] text-white px-6 py-3 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
                     무료 상담 신청하기
                 </button>
             </section>
@@ -138,7 +138,7 @@ export default function Home() {
                 <h2 className="text-3xl font-bold mb-4 text-[#4655C7] p-5">
                     당신의 합격, 지금 시작해보세요.
                 </h2>
-                <button className="bg-[#4655C7] text-white px-8 py-4 rounded-full text-lg hover:bg-[#344199] transition">
+                <button className="bg-[#4655C7] text-white px-8 py-4 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
                     무료 상담 신청하기
                 </button>
             </section>
