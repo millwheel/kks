@@ -64,11 +64,11 @@ export default function TestimonialSlider({ testimonials }: { testimonials: Test
                                 style={{ flexBasis: `${100 / itemsPerView}%` }}
                             >
                                 <div className="bg-gray-50 border border-gray-200 p-6 rounded-xl h-full flex flex-col">
-                                    <h3 className="text-lg font-bold mb-3 text-[#4a2e21]">{item.title}</h3>
+                                    <h3 className="text-lg font-bold mb-3 text-[#4655C7]">{item.title}</h3>
                                     <p className="text-gray-700 text-sm mb-4 flex-grow">{item.review}</p>
                                     <div className="mt-auto">
                                         <div className="flex items-center mt-4">
-                                            <div className="bg-[#4a2e21] text-white w-8 h-8 rounded-full flex items-center justify-center mr-2">
+                                            <div className="bg-[#4655C7] text-white w-8 h-8 rounded-full flex items-center justify-center mr-2">
                                                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" fill="white"/>
                                                     <path d="M12 14C7.58172 14 4 17.5817 4 22H20C20 17.5817 16.4183 14 12 14Z" fill="white"/>
@@ -96,9 +96,9 @@ export default function TestimonialSlider({ testimonials }: { testimonials: Test
                     disabled={currentSlide === 0}
                 >
                     <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"
-                         className="transition-colors duration-200 hover:text-[#582D26] group">
-                        <circle cx="19" cy="19" r="18.5" stroke="currentColor" className="text-[#6B3F36] group-hover:text-[#582D26]"></circle>
-                        <path d="M21 13L15 19L21 25" stroke="currentColor" className="text-[#6B3F36] group-hover:text-[#582D26]" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
+                         className="transition-colors duration-200 hover:text-[#3A46B9] group">
+                        <circle cx="19" cy="19" r="18.5" stroke="currentColor" className="text-[#4655C7] group-hover:text-[#3A46B9]"></circle>
+                        <path d="M21 13L15 19L21 25" stroke="currentColor" className="text-[#4655C7] group-hover:text-[#3A46B9]" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
                     </svg>
                 </button>
                 <button
@@ -108,9 +108,9 @@ export default function TestimonialSlider({ testimonials }: { testimonials: Test
                     disabled={currentSlide >= testimonials.length - itemsPerView}
                 >
                     <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg"
-                         className="transition-colors duration-200 hover:text-[#582D26] group">
-                        <circle cx="19" cy="19" r="18.5" stroke="currentColor" className="text-[#6B3F36] group-hover:text-[#582D26]"></circle>
-                        <path d="M17 25L23 19L17 13" stroke="currentColor" className="text-[#6B3F36] group-hover:text-[#582D26]" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
+                         className="transition-colors duration-200 hover:text-[#3A46B9] group">
+                        <circle cx="19" cy="19" r="18.5" stroke="currentColor" className="text-[#4655C7] group-hover:text-[#3A46B9]"></circle>
+                        <path d="M17 25L23 19L17 13" stroke="currentColor" className="text-[#4655C7] group-hover:text-[#3A46B9]" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"></path>
                     </svg>
                 </button>
             </div>
