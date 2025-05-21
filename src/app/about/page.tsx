@@ -31,7 +31,7 @@ export default function About() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                         <div className="bg-white p-8 rounded-xl shadow-md">
                             <img
-                                src="/img/consultant.jpg"
+                                src="/img/stand_front.jpg"
                                 alt="대기업 김과장"
                                 className="w-full h-auto rounded-lg mb-6"
                             />
