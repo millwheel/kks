@@ -20,7 +20,7 @@ export default function Navbar() {
                 <div className="flex justify-between h-16">
                     {/* 로고 */}
                     <div className="flex-shrink-0 flex items-center pl-5">
-                        <Link href="/" className="text-[#6b3f36] text-xl font-extrabold">
+                        <Link href="/" className="text-[#4655C7] text-xl font-extrabold">
                             대기업김과장
                         </Link>
                     </div>
@@ -31,7 +31,7 @@ export default function Navbar() {
                             <Link
                                 key={item.name}
                                 href={item.href}
-                                className="inline-flex items-center px-1 pt-1 text-base font-medium text-gray-700 hover:text-[#6b3f36] hover:border-b-2 hover:border-[#6b3f36]"
+                                className="inline-flex items-center px-1 pt-1 text-base font-medium text-gray-700 hover:text-[#4655C7] hover:border-b-2 hover:border-[#4655C7]"
                             >
                                 {item.name}
                             </Link>
@@ -42,7 +42,7 @@ export default function Navbar() {
                     <div className="hidden md:flex items-center">
                         <Link
                             href="/login"
-                            className="bg-[#6b3f36] text-white px-4 py-2 rounded-full text-sm hover:bg-[#582d26] transition"
+                            className="bg-[#4655C7] text-white px-4 py-2 rounded-full text-sm hover:bg-[#344199] transition"
                         >
                             로그인
                         </Link>
@@ -52,7 +52,7 @@ export default function Navbar() {
                     <div className="flex items-center md:hidden">
                         <button
                             type="button"
-                            className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-[#6b3f36] hover:bg-gray-100"
+                            className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-[#4655C7] hover:bg-gray-100"
                             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
                         >
                             <span className="sr-only">메뉴 열기</span>
@@ -84,7 +84,7 @@ export default function Navbar() {
                             <Link
                                 key={item.name}
                                 href={item.href}
-                                className="block pl-3 pr-4 py-2 text-base font-medium text-gray-700 hover:text-[#6b3f36] hover:bg-gray-50"
+                                className="block pl-3 pr-4 py-2 text-base font-medium text-gray-700 hover:text-[#4655C7] hover:bg-gray-50"
                                 onClick={() => setMobileMenuOpen(false)}
                             >
                                 {item.name}
@@ -92,7 +92,7 @@ export default function Navbar() {
                         ))}
                         <Link
                             href="/login"
-                            className="block pl-3 pr-4 py-2 text-base font-medium text-white bg-[#6b3f36] hover:bg-[#582d26] mt-2"
+                            className="block pl-3 pr-4 py-2 text-base font-medium text-white bg-[#4655C7] hover:bg-[#344199] mt-2"
                             onClick={() => setMobileMenuOpen(false)}
                         >
                             로그인
