@@ -33,25 +33,25 @@ export default function Home() {
     return (
         <main className="bg-white text-gray-900 min-h-screen flex flex-col">
             {/* Hero Section */}
-            <section className="bg-[#f3f1e7] py-20 px-6 text-center">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#4a2e21] p-5">
+            <section className="bg-[#f0f2ff] py-20 px-6 text-center">
+                <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#4655C7] p-5">
                     합격을 부르는 자기소개서와 면접 컨설팅
                 </h1>
-                <p className="text-lg text-[#4a2e21] mb-6">
+                <p className="text-lg text-[#4655C7] mb-6">
                     SK, 공기업, 대기업 최종 합격자 배출!<br />
                     실전 중심 맞춤형 피드백으로 당신의 합격을 이끕니다. <br />
                 </p>
-                <button className="bg-[#4a2e21] text-white px-6 py-3 rounded-full text-lg hover:bg-[#341a12] transition">
+                <button className="bg-[#4655C7] text-white px-6 py-3 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
                     무료 상담 신청하기
                 </button>
             </section>
 
             {/* Profile Summary */}
-            <section className="bg-[#f9f9f9] py-20 px-6">
+            <section className="bg-[#f0f4fa] py-20 px-6">
                 <div className="max-w-5xl mx-auto">
                     {/* 제목 */}
                     <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-[#4a2e21]">전문가 프로필</h2>
+                        <h2 className="text-3xl font-bold text-[#4655C7]">전문가 프로필</h2>
                     </div>
 
                     {/* 좌우 레이아웃 */}
@@ -77,7 +77,7 @@ export default function Home() {
                                     "자소서 피드백 + 면접 모의고사 완전 대응",
                                 ].map((text, i) => (
                                     <li key={i} className="flex items-start gap-2">
-                                        <span className="text-[#4a2e21] mt-1">✔</span>
+                                        <span className="text-[#4655C7] mt-1">✔</span>
                                         {text}
                                     </li>
                                 ))}
@@ -88,8 +88,8 @@ export default function Home() {
             </section>
 
             {/* Service Cards */}
-            <section className="bg-[#fdfaf2] py-16 px-6">
-                <h2 className="text-3xl font-bold text-[#4a2e21] text-center mb-12">제공 서비스</h2>
+            <section className="bg-[#f7f9ff] py-16 px-6">
+                <h2 className="text-3xl font-bold text-[#4655C7] text-center mb-12">제공 서비스</h2>
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
                     {[
                         {
@@ -115,7 +115,7 @@ export default function Home() {
 
             {/* Testimonials - Card Slider */}
             <section className="py-20 px-6 bg-white">
-                <h2 className="text-3xl font-bold text-[#4a2e21] text-center mb-12">이용자 후기</h2>
+                <h2 className="text-3xl font-bold text-[#4655C7] text-center mb-12">이용자 후기</h2>
 
                 {/* SEO를 위한 실제 후기 데이터 (스크린 리더와 검색 엔진용) */}
                 <div className="sr-only">
@@ -134,17 +134,17 @@ export default function Home() {
             </section>
 
             {/* CTA Section */}
-            <section className="bg-[#f3f1e7] text-center py-24 px-6">
-                <h2 className="text-3xl font-bold mb-4 text-[#4a2e21] p-5">
+            <section className="bg-[#f0f2ff] text-center py-24 px-6">
+                <h2 className="text-3xl font-bold mb-4 text-[#4655C7] p-5">
                     당신의 합격, 지금 시작해보세요.
                 </h2>
-                <button className="bg-[#4a2e21] text-white px-8 py-4 rounded-full text-lg hover:bg-[#341a12] transition">
+                <button className="bg-[#4655C7] text-white px-8 py-4 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
                     무료 상담 신청하기
                 </button>
             </section>
 
             {/* Footer */}
-            <footer className="bg-[#4a2e21] text-white py-12 px-6 text-center text-sm">
+            <footer className="bg-[#4655C7] text-white py-12 px-6 text-center text-sm">
                 <p className="font-semibold mb-2">대기업김과장</p>
                 <p>이메일: kks7180@naver.com</p>
                 <p className="text-xs mt-4">COPYRIGHT 2025. 대기업김과장 All rights reserved.</p>
