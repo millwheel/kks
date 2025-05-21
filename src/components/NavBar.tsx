@@ -10,7 +10,7 @@ export default function Navbar() {
         { name: '대기업김과장은 누구인가?', href: '/about' },
         { name: '대표 서비스', href: '/services' },
         { name: '후기 및 합격 사례', href: '/testimonials' },
-        { name: '칼럼', href: '/blog' },
+        { name: '칼럼', href: '/column' },
         { name: '상담 신청', href: '/contact' },
     ];
 
