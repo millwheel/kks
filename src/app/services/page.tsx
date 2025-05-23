@@ -12,20 +12,12 @@ export default function Services() {
                     대기업 인사담당자 출신이 직접 첨삭하는 1:1 맞춤 피드백<br />
                     합격을 위한 최고의 선택
                 </p>
-                <div className="space-x-4">
-                    <button className="bg-[#4655C7] text-white px-6 py-3 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
-                        첨삭 신청하기
-                    </button>
-                    <button className="border-2 border-[#4655C7] text-[#4655C7] px-6 py-3 rounded-full text-lg hover:bg-[#f0f2ff] transition">
-                        합격 후기 보기
-                    </button>
-                </div>
             </section>
 
             {/* Service Introduction */}
             <section className="bg-[#f0f4fa] py-16 px-6">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-3xl font-bold text-[#4655C7] mb-8">대기업 인사담당자 출신이 말하는 합격 자기소개서</h2>
+                    <h2 className="text-3xl font-bold text-[#4655C7] mb-8">대기업 출신이 말하는 합격 자기소개서</h2>
                     <div className="bg-white p-8 rounded-xl shadow-md">
                         <ul className="space-y-4">
                             {[
@@ -141,7 +133,7 @@ export default function Services() {
                 </h2>
                 <Link href="/contact">
                     <button className="bg-[#4655C7] text-white px-8 py-4 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
-                        무료상담 신청하기
+                        무료 상담 신청하기
                     </button>
                 </Link>
             </section>

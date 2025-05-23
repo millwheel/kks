@@ -13,14 +13,6 @@ export default function About() {
                     연간 1,000건 이상 자소서 첨삭 & 비대면 면접 컨설팅<br />
                     숨고/크몽 분야 1위, 합격률 82%의 실력
                 </p>
-                <div className="space-x-4">
-                    <button className="bg-[#4655C7] text-white px-6 py-3 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
-                        자소서 첨삭 서비스 보기
-                    </button>
-                    <button className="border-2 border-[#4655C7] text-[#4655C7] px-6 py-3 rounded-full text-lg hover:bg-[#f0f2ff] transition">
-                        후기 보기
-                    </button>
-                </div>
             </section>
 
             {/* Profile */}
