@@ -1,5 +1,6 @@
 import TestimonialSliderWrapper from '../components/HomeTestimonialSliderWrapper';
 import Link from 'next/link';
+import HomeCompanySlider from "@/components/HomeCompanySlider";
 
 // 후기 데이터 - 서버 컴포넌트에서 정의하여 SEO에 노출
 const testimonials = [
@@ -244,6 +245,7 @@ export default function Home() {
                         <h3 className="text-3xl font-bold text-[#4655C7] text-center mb-8">
                             이용자 실제 합격 기업 현황
                         </h3>
+                        <HomeCompanySlider />
 
                     </div>
                 </div>

@@ -17,7 +17,7 @@ export default function Services() {
             {/* Service Introduction */}
             <section className="bg-[#f0f4fa] py-16 px-6">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-3xl font-bold text-[#4655C7] mb-8">대기업 출신이 말하는 합격 자기소개서</h2>
+                    <h2 className="text-3xl font-bold text-[#4655C7] mb-8 text-center">대기업 출신이 말하는 합격 자기소개서</h2>
                     <div className="bg-white p-8 rounded-xl shadow-md">
                         <ul className="space-y-4">
                             {[
