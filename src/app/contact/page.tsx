@@ -38,17 +38,18 @@ export default function Contact() {
                         기존 이용자들의 후기와 서비스를 확인해보세요
                     </p>
 
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div className="grid md:grid-cols-5 gap-4">
                         {[
-                            { name: '숨고', icon: '/icons/soomgo.png', desc: '숨고 프로필 보기', link: 'https://soomgo.com/profile/users/10562016' },
-                            { name: '크몽', icon: '/icons/kmong.png', desc: '크몽 페이지로', link: 'https://kmong.com/gig/645507' },
-                            { name: '네이버 블로그', icon: '/icons/naver_blog.svg', desc: '블로그 보기', link: 'https://blog.naver.com/pass_everything' },
-                            { name: '인스타그램', icon: '/icons/instagram.webp', desc: '인스타그램 DM', link: 'https://www.instagram.com/allpass_everything/' },
+                            { name: '숨고', icon: '/icons/soomgo.png',  link: 'https://soomgo.com/profile/users/10562016' },
+                            { name: '크몽', icon: '/icons/kmong.png', link: 'https://kmong.com/gig/645507' },
+                            { name: '네이버 블로그', icon: '/icons/naver_blog.svg',  link: 'https://blog.naver.com/pass_everything' },
+                            { name: '인스타그램', icon: '/icons/instagram.webp', link: 'https://www.instagram.com/allpass_everything/' },
+                            { name: '스레드', icon: '/icons/threads.png',  link: 'https://www.threads.com/@allpass_everything' },
                         ].map((channel, i) => (
                             <button
                                 key={i}
                                 onClick={() => window.open(channel.link, '_blank')}
-                                className="bg-white border border-gray-200 p-4 rounded-xl text-center hover:shadow-md transition cursor-pointer group"
+                                className="bg-white border border-gray-200 p-6 rounded-xl text-center hover:shadow-md transition cursor-pointer group"
                             >
                                 <div className="h-8 w-8 mx-auto mb-2 flex items-center justify-center">
                                     <img
@@ -58,7 +59,6 @@ export default function Contact() {
                                     />
                                 </div>
                                 <h3 className="font-medium text-gray-700 mb-1">{channel.name}</h3>
-                                <p className="text-xs text-gray-500 group-hover:text-gray-600">{channel.desc}</p>
                             </button>
                         ))}
                     </div>

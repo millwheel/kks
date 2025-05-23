@@ -11,7 +11,7 @@ export default function Home() {
             {/* Hero Section */}
             <section className="bg-[#f0f2ff] py-20 px-6 text-center">
                 <h1 className="text-5xl font-bold mb-4 text-[#4655C7] p-5">
-                    합격을 부르는 자기소개서와 면접 컨설팅
+                    합격을 부르는 자기소개서 & 면접 컨설팅
                 </h1>
                 <p className="text-lg text-[#4655C7] mb-6">
                     SK, 공기업, 대기업 최종 합격자 배출!<br />
