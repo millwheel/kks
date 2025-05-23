@@ -36,7 +36,7 @@ export default function About() {
                             {/* 메인 타이틀 */}
                             <div className="mb-8">
                                 <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight mb-4">
-                                    상위 0.1% 초격차<br />
+                                    상위 1% 초격차<br />
                                     자기소개서 전문
                                 </h2>
                             </div>
@@ -129,8 +129,11 @@ export default function About() {
             {/* CTA Section */}
             <section className="bg-[#f0f2ff] text-center py-24 px-6">
                 <h2 className="text-3xl font-bold mb-6 text-[#4655C7]">
-                    합격을 향한 첫걸음, 지금 시작하세요
+                    합격으로 가는 가장 빠른 길
                 </h2>
+                <p className="text-lg text-[#4655C7] mb-6">
+                    서류부터 면접까지 한 방에 끝내기
+                </p>
                 <Link href="/contact">
                     <button className="bg-[#4655C7] text-white px-8 py-4 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
                         무료 상담 신청하기
