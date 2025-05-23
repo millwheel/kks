@@ -18,7 +18,12 @@ export default function Contact() {
                         onClick={() => window.open('https://open.kakao.com/o/sAfYyKLg', '_blank')}
                         className="bg-[#FEE500] text-black px-8 py-4 rounded-full text-lg font-semibold hover:bg-[#F5DC00] transition flex items-center gap-2 hover:cursor-pointer"
                     >
-                        💬 카카오톡으로 상담하기
+                        <img
+                            src="/icons/kakaotalk.png"
+                            alt="카카오톡 아이콘"
+                            className="w-6 h-6 object-contain"
+                        />
+                        카카오톡으로 상담하기
                     </button>
                     <button
                         onClick={() => window.location.href = 'mailto:kks7180@naver.com'}
@@ -39,19 +44,25 @@ export default function Contact() {
                         기존 이용자들의 후기와 서비스를 확인해보세요
                     </p>
 
-                    <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                         {[
                             { name: '숨고', icon: '/icons/soomgo.png', desc: '숨고 프로필 보기', link: 'https://soomgo.com/profile/users/10562016' },
-                            { name: '크몽', icon: '🛍️', desc: '크몽 페이지로', link: 'https://kmong.com/gig/645507' },
-                            { name: '네이버 블로그', icon: '📘', desc: '블로그 보기', link: 'https://blog.naver.com/pass_everything' },
-                            { name: '인스타그램', icon: '📷', desc: '인스타그램 DM', link: 'https://www.instagram.com/allpass_everything/' },
+                            { name: '크몽', icon: '/icons/kmong.png', desc: '크몽 페이지로', link: 'https://kmong.com/gig/645507' },
+                            { name: '네이버 블로그', icon: '/icons/naver_blog.svg', desc: '블로그 보기', link: 'https://blog.naver.com/pass_everything' },
+                            { name: '인스타그램', icon: '/icons/instagram.webp', desc: '인스타그램 DM', link: 'https://www.instagram.com/allpass_everything/' },
                         ].map((channel, i) => (
                             <button
                                 key={i}
                                 onClick={() => window.open(channel.link, '_blank')}
                                 className="bg-white border border-gray-200 p-4 rounded-xl text-center hover:shadow-md transition cursor-pointer group"
                             >
-                                <div className="text-2xl mb-2">{channel.icon}</div>
+                                <div className="h-8 w-8 mx-auto mb-2 flex items-center justify-center">
+                                    <img
+                                        src={channel.icon}
+                                        alt={`${channel.name} 아이콘`}
+                                        className="max-h-full max-w-full object-contain w-8 h-8"
+                                    />
+                                </div>
                                 <h3 className="font-medium text-gray-700 mb-1">{channel.name}</h3>
                                 <p className="text-xs text-gray-500 group-hover:text-gray-600">{channel.desc}</p>
                             </button>
