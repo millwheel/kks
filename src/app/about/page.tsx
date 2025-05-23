@@ -24,10 +24,10 @@ export default function About() {
             {/* Profile */}
             <section className="relative bg-gradient-to-br from-[#1a2980] via-[#26619c] to-[#4655C7] py-20 px-6 overflow-hidden">
 
-                <div className="max-w-7xl mx-auto relative z-10">
-                    <div className="flex items-center justify-between">
+                <div className="max-w-5xl mx-auto relative z-10">
+                    <div className="flex items-center">
                         {/* 왼쪽 콘텐츠 */}
-                        <div className="flex-1 pr-12">
+                        <div className="flex-2">
                             {/* 메인 타이틀 */}
                             <div className="mb-8">
                                 <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight mb-4">
@@ -60,20 +60,16 @@ export default function About() {
                         </div>
 
                         {/* 오른쪽 이미지 */}
-                        <div className="flex-shrink-0">
-
-
-
-                                {/* 실제 이미지 */}
-                                <div className="relative w-80 h-96 rounded-2xl overflow-hidden">
-                                    <img
-                                        src="/img/desk_front.jpg"
-                                        alt="전문 컨설턴트"
-                                        className="object-cover w-full h-full"
-                                    />
-                                </div>
-
+                        <div className="flex-1">
+                            <div className="relative w-80 h-96 rounded-2xl overflow-hidden">
+                                <img
+                                    src="/img/desk_front.jpg"
+                                    alt="전문 컨설턴트"
+                                    className="object-cover w-full h-full"
+                                />
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </section>
