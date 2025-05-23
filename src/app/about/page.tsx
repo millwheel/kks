@@ -22,7 +22,7 @@ export default function About() {
             </section>
 
             {/* Profile */}
-            <section className="relative bg-gradient-to-br from-[#1a2980] via-[#26619c] to-[#4655C7] py-20 px-6 overflow-hidden">
+            <section className="relative bg-gradient-to-br from-[#1a202c] via-[#2d3748] to-[#4a5568] py-20 px-6 overflow-hidden">
 
                 <div className="max-w-5xl mx-auto relative z-10">
                     <div className="flex items-center">
@@ -62,7 +62,7 @@ export default function About() {
                                     <span className="text-white text-lg">연간 1천명 이상 클라이언트 컨설팅 경험 보유</span>
                                 </div>
                                 <div className="flex flex-wrap gap-2">
-                                    <span className="text-white text-lg">유명 대기업 면접 합격률 90% 실적 보유</span>
+                                    <span className="text-white text-lg">굴지 대기업 면접 합격률 실적 다수 보유</span>
                                 </div>
                                 <div className="flex flex-wrap gap-2">
                                     <span className="text-white text-lg">자소서/면접 전문 유료 컨설팅 수료</span>
