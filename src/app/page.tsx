@@ -35,7 +35,7 @@ export default function Home() {
         <main className="bg-white text-gray-900 min-h-screen flex flex-col">
             {/* Hero Section */}
             <section className="bg-[#f0f2ff] py-20 px-6 text-center">
-                <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#4655C7] p-5">
+                <h1 className="text-5xl font-bold mb-4 text-[#4655C7] p-5">
                     합격을 부르는 자기소개서와 면접 컨설팅
                 </h1>
                 <p className="text-lg text-[#4655C7] mb-6">
@@ -50,7 +50,7 @@ export default function Home() {
             {/* 취업, 스펙이 부족해서 떨어지는 걸까요? 섹션 */}
             <section className="bg-[#f7f9ff] py-16 px-6">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-3xl font-bold text-[#4655C7] text-center mb-8">
+                    <h2 className="text-4xl font-bold text-[#4655C7] text-center mb-8">
                         취업, 스펙이 부족해서 떨어지는 걸까요?
                     </h2>
 
@@ -109,7 +109,7 @@ export default function Home() {
             {/* 기업에서 원하는 대화법이 있습니다 섹션 */}
             <section className="bg-white py-16 px-6">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-3xl font-bold text-[#4655C7] text-center mb-8">
+                    <h2 className="text-4xl font-bold text-[#4655C7] text-center mb-8">
                         기업에서 원하는 대화법이 있습니다
                     </h2>
 
@@ -118,7 +118,7 @@ export default function Home() {
                             면접에서 어떤 말이 합격을 이끌어낼까요?
                         </h3>
                         <p className="text-lg md:text-xl font-semibold text-[#4655C7] text-center mb-8">
-                            그 <span className="font-bold border-b-2 border-[#4655C7] pb-1">대화법</span>을 알려드립니다.
+                            <span className="font-bold border-b-2 border-[#4655C7] pb-1">&#39;방법&#39;</span>을 알려드립니다.
                         </p>
 
                         <div className="space-y-5 mb-8">
@@ -204,11 +204,54 @@ export default function Home() {
                 </div>
             </section>
 
-            {/* 섹션 추가 필요 */}
+            {/* 채용 혹한기에도 압도적인 성과 섹션 */}
+            <section className="bg-[#f0f4fa] py-16 px-6">
+                <div className="max-w-6xl mx-auto">
+                    <h2 className="text-4xl font-bold text-[#4655C7] text-center mb-6">
+                        채용 혹한기에도 압도적인 성과를 내고 있습니다
+                    </h2>
+
+                    <div className="text-center mb-12">
+                        <div className="space-y-3 text-gray-700">
+                            <p className="text-base md:text-lg">
+                                <span className="font-semibold text-[#4655C7]">870명 이상의 합격자, 150개 이상의 기업.</span> 데이터가 증명합니다.
+                            </p>
+                            <p className="text-base md:text-lg font-semibold text-gray-800">
+                                당신도 다음 성공 사례가 될 수 있습니다.
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* 숫자 강조 배너 */}
+                    <div className="max-w-5xl mx-auto">
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
+                            {[
+                                { count: "870명+", label: "누적 합격자 수" },
+                                { count: "1,000건+", label: "연간 첨삭/컨설팅 건수" },
+                                { count: "82%", label: "평균 자소서 합격률" },
+                                { count: "150곳+", label: "최종 합격 기업" }
+                            ].map((stat, i) => (
+                                <div key={i} className="bg-white p-6 rounded-xl shadow-md text-center">
+                                    <div className="text-4xl font-bold text-[#e1582e] mb-2">{stat.count}</div>
+                                    <div className="text-gray-700">{stat.label}</div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    {/* 합격 기업 리스트 섹션 */}
+                    <div className="bg-white rounded-xl shadow-md p-8">
+                        <h3 className="text-3xl font-bold text-[#4655C7] text-center mb-8">
+                            이용자 실제 합격 기업 현황
+                        </h3>
+
+                    </div>
+                </div>
+            </section>
 
             {/* Testimonials - Card Slider */}
             <section className="py-20 px-6 bg-white">
-                <h2 className="text-3xl font-bold text-[#4655C7] text-center mb-12">이용자 후기</h2>
+                <h2 className="text-4xl font-bold text-[#4655C7] text-center mb-12">이용자 후기</h2>
 
                 {/* SEO를 위한 실제 후기 데이터 (스크린 리더와 검색 엔진용) */}
                 <div className="sr-only">
@@ -244,6 +287,7 @@ export default function Home() {
                 <p>이메일: kks7180@naver.com</p>
                 <p className="text-xs mt-4">COPYRIGHT 2025. 대기업김과장 All rights reserved.</p>
             </footer>
+
         </main>
     );
 }

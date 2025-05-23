@@ -51,9 +51,13 @@ export default function Services() {
                                 <h3 className="font-bold text-xl mb-3 text-[#4655C7]">{s.name}</h3>
                                 <p className="text-gray-700 mb-4">{s.desc}</p>
                                 <div className="text-right font-semibold text-xl text-[#4655C7] mb-4">{s.price}</div>
-                                <button className="w-full py-3 bg-[#4655C7] text-white rounded-full hover:bg-[#344199] transition">
-                                    신청하기
-                                </button>
+
+                                <Link href="/contact">
+                                    <button className="w-full py-3 bg-[#4655C7] text-white rounded-full hover:bg-[#344199] transition hover:cursor-pointer">
+                                        신청하기
+                                    </button>
+                                </Link>
+
                             </div>
                         ))}
                     </div>

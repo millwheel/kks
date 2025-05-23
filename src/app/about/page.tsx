@@ -92,7 +92,7 @@ export default function About() {
                         {[
                             { count: "870명+", label: "누적 합격자 수" },
                             { count: "1,000건+", label: "연간 첨삭/컨설팅 건수" },
-                            { count: "최대 82%", label: "평균 자소서 합격률" },
+                            { count: "82%", label: "평균 자소서 합격률" },
                             { count: "150곳+", label: "최종 합격 기업" }
                         ].map((stat, i) => (
                             <div key={i} className="bg-white p-6 rounded-xl shadow-md text-center">
