@@ -21,38 +21,58 @@ export default function About() {
                 </div>
             </section>
 
-            {/* Consultant Introduction */}
-            <section className="bg-[#f7f9ff] py-16 px-6">
-                <div className="max-w-5xl mx-auto">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-[#4655C7]">대기업 김과장은 누구인가요?</h2>
-                    </div>
+            {/* Profile */}
+            <section className="relative bg-gradient-to-br from-[#1a2980] via-[#26619c] to-[#4655C7] py-20 px-6 overflow-hidden">
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                        <div className="bg-white p-8 rounded-xl shadow-md">
-                            <img
-                                src="/img/stand_front.jpg"
-                                alt="대기업 김과장"
-                                className="w-full h-auto rounded-lg mb-6"
-                            />
+                <div className="max-w-7xl mx-auto relative z-10">
+                    <div className="flex items-center justify-between">
+                        {/* 왼쪽 콘텐츠 */}
+                        <div className="flex-1 pr-12">
+                            {/* 메인 타이틀 */}
+                            <div className="mb-8">
+                                <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight mb-4">
+                                    상위 0.1% 초격차<br />
+                                    <span className="text-white">자기소개서</span>
+                                </h2>
+                            </div>
+
+                            {/* 경력 */}
+                            <div className="space-y-3 mb-8">
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="text-white text-lg">SK하이닉스 Photo 공정 연구원</span>
+                                </div>
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="text-white text-lg">전) 현대로템 철도사업부</span>
+                                </div>
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="text-white text-lg">삼성전자 반도체 연구소 공정개발 경력직 최종합격</span>
+                                </div>
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="text-white text-lg">연간 1천명 이상 클라이언트 컨설팅 경험 보유</span>
+                                </div>
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="text-white text-lg">유명 대기업 면접 합격률 90% 실적 보유</span>
+                                </div>
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="text-white text-lg">자소서/면접 전문 유료 컨설팅 수료</span>
+                                </div>
+                            </div>
                         </div>
-                        <div>
-                            <ul className="space-y-4">
-                                {[
-                                    "SK하이닉스 Photo 공정 연구원",
-                                    "전) 현대로템 철도사업부",
-                                    "삼성전자 반도체 연구소 공정개발 경력직 최종합격",
-                                    "연간 1천명 이상 클라이언트 컨설팅",
-                                    "자소서/면접 전문 유료 컨설팅 수료",
-                                    "유명 대기업 면접 합격률 90%+ 실적 보유",
-                                    "기업 서류 평가 및 면접관 경험"
-                                ].map((text, i) => (
-                                    <li key={i} className="flex items-start gap-3">
-                                        <span className="text-[#4655C7] mt-1">✔</span>
-                                        <span className="text-gray-800">{text}</span>
-                                    </li>
-                                ))}
-                            </ul>
+
+                        {/* 오른쪽 이미지 */}
+                        <div className="flex-shrink-0">
+
+
+
+                                {/* 실제 이미지 */}
+                                <div className="relative w-80 h-96 rounded-2xl overflow-hidden">
+                                    <img
+                                        src="/img/desk_front.jpg"
+                                        alt="전문 컨설턴트"
+                                        className="object-cover w-full h-full"
+                                    />
+                                </div>
+
                         </div>
                     </div>
                 </div>

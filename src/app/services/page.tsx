@@ -138,7 +138,7 @@ export default function Services() {
                     합격을 부르는 자기소개서, 지금 시작하세요
                 </h2>
                 <button className="bg-[#4655C7] text-white px-8 py-4 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
-                    지금 첨삭 신청하기
+                    무료상담 신청하기
                 </button>
             </section>
 
