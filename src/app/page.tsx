@@ -17,9 +17,11 @@ export default function Home() {
                     SK, 공기업, 대기업 최종 합격자 배출!<br />
                     실전 중심 맞춤형 피드백으로 당신의 합격을 이끕니다. <br />
                 </p>
-                <button className="bg-[#4655C7] text-white px-6 py-3 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
-                    무료 상담 신청하기
-                </button>
+                <Link href="/contact">
+                    <button className="bg-[#4655C7] text-white px-8 py-4 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
+                        무료 상담 신청하기
+                    </button>
+                </Link>
             </section>
 
             {/* 취업, 스펙이 부족해서 떨어지는 걸까요? 섹션 */}
