@@ -27,7 +27,7 @@ export default function About() {
                 <div className="max-w-5xl mx-auto relative z-10">
                     <div className="flex items-center">
                         {/* 이미지 */}
-                        <div className="flex-1 pr-6">
+                        <div className="flex-1 pr-12">
                             <div className="relative w-96 rounded-2xl overflow-hidden">
                                 <img
                                     src="/img/stand_front.jpg"
@@ -38,25 +38,25 @@ export default function About() {
                         </div>
                         
                         {/* 설명 */}
-                        <div className="flex-1">
+                        <div className="flex-2">
                             {/* 메인 타이틀 */}
                             <div className="mb-8">
                                 <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight mb-4">
                                     상위 0.1% 초격차<br />
-                                    <span className="text-white">자기소개서</span>
+                                    자기소개서 전문
                                 </h2>
                             </div>
 
                             {/* 세부사항 */}
                             <div className="space-y-3 mb-8">
                                 <div className="flex flex-wrap gap-2">
-                                    <span className="text-white text-lg">SK하이닉스 Photo 공정 연구원</span>
+                                    <span className="text-white text-lg">SK하이닉스 Photo 공정 연구원 출신</span>
                                 </div>
                                 <div className="flex flex-wrap gap-2">
-                                    <span className="text-white text-lg">전) 현대로템 철도사업부</span>
+                                    <span className="text-white text-lg">현대로템 철도사업부 출신</span>
                                 </div>
                                 <div className="flex flex-wrap gap-2">
-                                    <span className="text-white text-lg">삼성전자 반도체 연구소 공정개발 경력직 최종합격</span>
+                                    <span className="text-white text-lg">삼성전자 반도체 연구소 공정개발 경력직 최종 합격</span>
                                 </div>
                                 <div className="flex flex-wrap gap-2">
                                     <span className="text-white text-lg">연간 1천명 이상 클라이언트 컨설팅 경험 보유</span>
@@ -106,20 +106,6 @@ export default function About() {
                                 <div className="text-gray-700">{stat.label}</div>
                             </div>
                         ))}
-                    </div>
-
-                    <div className="bg-white p-8 rounded-xl shadow-md">
-                        <h3 className="font-bold text-xl mb-6 text-center text-[#4655C7]">주요 합격 기업</h3>
-                        <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-                            {[
-                                "ASML", "삼성전자", "SK하이닉스", "현대자동차", "LG디스플레이",
-                                "현대로템", "삼성SDI", "한국전력", "수자원공사", "포스코"
-                            ].map((company, i) => (
-                                <div key={i} className="bg-[#f7f9ff] p-3 rounded-lg text-center text-gray-800 font-medium">
-                                    {company}
-                                </div>
-                            ))}
-                        </div>
                     </div>
                 </div>
             </section>
