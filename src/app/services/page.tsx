@@ -6,10 +6,10 @@ export default function Services() {
             {/* Hero Section */}
             <section className="bg-[#f0f2ff] py-20 px-6 text-center">
                 <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#4655C7] p-5">
-                    자기소개서, 기업이 원하는 언어로 바꿔드립니다
+                    기업이 원하는 언어로 바꿔드립니다
                 </h1>
                 <p className="text-lg text-[#4655C7] mb-6">
-                    대기업 인사담당자 출신이 직접 첨삭하는 1:1 맞춤 피드백<br />
+                    대기업 출신이 직접 첨삭하는 1:1 맞춤 피드백<br />
                     합격을 위한 최고의 선택
                 </p>
             </section>
@@ -42,15 +42,14 @@ export default function Services() {
                     <h2 className="text-3xl font-bold text-[#4655C7] text-center mb-12">서비스 종류 및 가격</h2>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         {[
-                            { name: '기본 자기소개서 첨삭', desc: '문법/표현/논리 구성 중심 첨삭', price: '49,000원' },
-                            { name: '프리미엄 첨삭', desc: '기업 맞춤형 + 면접 대비 키워드 반영', price: '79,000원' },
-                            { name: '1:1 모의면접 피드백', desc: '영상 녹화 후 면접 피드백 제공', price: '69,000원' },
-                            { name: '패키지 상품', desc: '첨삭 + 모의면접 세트', price: '110,000원' },
+                            { name: '기본 자기소개서 첨삭', desc: '문법/표현/논리 구성 중심 첨삭' },
+                            { name: '프리미엄 첨삭', desc: '기업 맞춤형 + 면접 대비 키워드 반영'},
+                            { name: '1:1 모의면접 피드백', desc: '영상 녹화 후 면접 피드백 제공' },
+                            { name: '패키지 상품', desc: '첨삭 + 모의면접 세트' },
                         ].map((s, i) => (
                             <div key={i} className="bg-[#f7f9ff] rounded-xl p-6 shadow-md hover:shadow-lg transition">
                                 <h3 className="font-bold text-xl mb-3 text-[#4655C7]">{s.name}</h3>
                                 <p className="text-gray-700 mb-4">{s.desc}</p>
-                                <div className="text-right font-semibold text-xl text-[#4655C7] mb-4">{s.price}</div>
 
                                 <Link href="/contact">
                                     <button className="w-full py-3 bg-[#4655C7] text-white rounded-full hover:bg-[#344199] transition hover:cursor-pointer">

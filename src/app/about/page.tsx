@@ -6,7 +6,7 @@ export default function About() {
             {/* Hero Section */}
             <section className="bg-[#f0f2ff] py-20 px-6 text-center">
                 <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#4655C7] p-5">
-                    870명 합격의 비밀, 대기업 김과장
+                    870명 합격의 비밀, 대기업김과장
                 </h1>
                 <p className="text-lg text-[#4655C7] mb-6">
                     SK하이닉스·현대로템 출신 취업 전문가<br />
@@ -36,7 +36,7 @@ export default function About() {
                             <div className="mb-6 md:mb-8">
                                 <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
                                     상위 1% 초격차<br />
-                                    자기소개서 전문
+                                    취업 컨설팅 전문
                                 </h2>
                             </div>
 
