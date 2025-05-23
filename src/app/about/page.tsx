@@ -16,13 +16,12 @@ export default function About() {
             </section>
 
             {/* Profile */}
-            <section className="relative bg-gradient-to-br from-[#1a202c] via-[#2d3748] to-[#4a5568] py-20 px-6 overflow-hidden">
-
+            <section className="relative bg-gradient-to-br from-[#1a202c] via-[#2d3748] to-[#4a5568] py-12 md:py-20 px-6 overflow-hidden">
                 <div className="max-w-5xl mx-auto relative z-10">
-                    <div className="flex items-center">
+                    <div className="flex flex-col md:flex-row items-center">
                         {/* 이미지 */}
-                        <div className="flex-1 pr-12">
-                            <div className="relative w-96 rounded-2xl overflow-hidden">
+                        <div className="w-full md:flex-1 md:pr-12 mb-8 md:mb-0">
+                            <div className="relative w-64 md:w-96 mx-auto md:mx-0 rounded-2xl overflow-hidden">
                                 <img
                                     src="/img/stand_front.jpg"
                                     alt="전문 컨설턴트"
@@ -30,40 +29,39 @@ export default function About() {
                                 />
                             </div>
                         </div>
-                        
+
                         {/* 설명 */}
-                        <div className="flex-2">
+                        <div className="w-full md:flex-2 text-center md:text-left">
                             {/* 메인 타이틀 */}
-                            <div className="mb-8">
-                                <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight mb-4">
+                            <div className="mb-6 md:mb-8">
+                                <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
                                     상위 1% 초격차<br />
                                     자기소개서 전문
                                 </h2>
                             </div>
 
                             {/* 세부사항 */}
-                            <div className="space-y-3 mb-8">
-                                <div className="flex flex-wrap gap-2">
-                                    <span className="text-white text-lg">SK하이닉스 Photo 공정 연구원 출신</span>
+                            <div className="space-y-2 md:space-y-3 mb-6 md:mb-8">
+                                <div className="flex justify-center md:justify-start flex-wrap gap-2">
+                                    <span className="text-white text-base md:text-lg">SK하이닉스 Photo 공정 연구원 출신</span>
                                 </div>
-                                <div className="flex flex-wrap gap-2">
-                                    <span className="text-white text-lg">현대로템 철도사업부 출신</span>
+                                <div className="flex justify-center md:justify-start flex-wrap gap-2">
+                                    <span className="text-white text-base md:text-lg">현대로템 철도사업부 출신</span>
                                 </div>
-                                <div className="flex flex-wrap gap-2">
-                                    <span className="text-white text-lg">삼성전자 반도체 연구소 공정개발 경력직 최종 합격</span>
+                                <div className="flex justify-center md:justify-start flex-wrap gap-2">
+                                    <span className="text-white text-base md:text-lg">삼성전자 반도체 연구소 공정개발 경력직 최종 합격</span>
                                 </div>
-                                <div className="flex flex-wrap gap-2">
-                                    <span className="text-white text-lg">연간 1천명 이상 클라이언트 컨설팅 경험 보유</span>
+                                <div className="flex justify-center md:justify-start flex-wrap gap-2">
+                                    <span className="text-white text-base md:text-lg">연간 1천명 이상 클라이언트 컨설팅 경험 보유</span>
                                 </div>
-                                <div className="flex flex-wrap gap-2">
-                                    <span className="text-white text-lg">굴지 대기업 면접 합격률 실적 다수 보유</span>
+                                <div className="flex justify-center md:justify-start flex-wrap gap-2">
+                                    <span className="text-white text-base md:text-lg">굴지 대기업 면접 합격률 실적 다수 보유</span>
                                 </div>
-                                <div className="flex flex-wrap gap-2">
-                                    <span className="text-white text-lg">자소서/면접 전문 유료 컨설팅 수료</span>
+                                <div className="flex justify-center md:justify-start flex-wrap gap-2">
+                                    <span className="text-white text-base md:text-lg">자소서/면접 전문 유료 컨설팅 수료</span>
                                 </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </section>
