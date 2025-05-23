@@ -61,21 +61,14 @@ export default function About() {
             {/* Specialized Fields */}
             <section className="bg-white py-16 px-6">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-3xl font-bold text-[#4655C7] text-center mb-12">내가 잘하는 분야는?</h2>
+                    <h2 className="text-3xl font-bold text-[#4655C7] text-center mb-12">[KKS 필독!] 스토리텔링 파트</h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        {[
-                            { category: "반도체", companies: "SK하이닉스, 삼성전자 DS, 삼성디스플레이" },
-                            { category: "자동차/중공업", companies: "현대자동차, 현대로템, 기아" },
-                            { category: "외국계 기업", companies: "마이크론, ASML, 램리서치 등" },
-                            { category: "공기업/공무직", companies: "한국수자원공사, 근로복지공단, 교통안전공단" },
-                            { category: "직무", companies: "생산기술 / R&D / 품질관리 / 공정기술 / 설계 / HR" }
-                        ].map((field, i) => (
-                            <div key={i} className="bg-[#f0f2ff] p-6 rounded-xl shadow-sm hover:shadow-md transition">
-                                <h3 className="font-bold text-xl mb-3 text-[#4655C7]">✅ {field.category}</h3>
-                                <p className="text-gray-700">{field.companies}</p>
-                            </div>
-                        ))}
+                    <div className="grid grid-cols-1 gap-8 content-center">
+                        <span>여기에 스토리텔링을 넣어서 신뢰감을 올려주게 만든다. (아래는 예시)</span>
+                        <span>~한 경험을 통해 컨설팅을 시작하게 되었습니다.</span>
+                        <span>~라는 가설을 세웠고, ~을 통해 결과를 검증해냈습니다</span>
+                        <span>~한 사람들의 ~부분의 가치를 올리는 방법에 대한 연구를 지속적으로 진행 중입니다.</span>
+                        <span className="font-bold">스토리 텔링 파트 직접 작성 요망</span>
                     </div>
                 </div>
             </section>
