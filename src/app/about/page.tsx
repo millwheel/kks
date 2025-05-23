@@ -26,8 +26,19 @@ export default function About() {
 
                 <div className="max-w-5xl mx-auto relative z-10">
                     <div className="flex items-center">
-                        {/* 왼쪽 콘텐츠 */}
-                        <div className="flex-2">
+                        {/* 이미지 */}
+                        <div className="flex-1 pr-6">
+                            <div className="relative w-96 rounded-2xl overflow-hidden">
+                                <img
+                                    src="/img/stand_front.jpg"
+                                    alt="전문 컨설턴트"
+                                    className="object-cover w-full h-full"
+                                />
+                            </div>
+                        </div>
+                        
+                        {/* 설명 */}
+                        <div className="flex-1">
                             {/* 메인 타이틀 */}
                             <div className="mb-8">
                                 <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight mb-4">
@@ -36,7 +47,7 @@ export default function About() {
                                 </h2>
                             </div>
 
-                            {/* 경력 */}
+                            {/* 세부사항 */}
                             <div className="space-y-3 mb-8">
                                 <div className="flex flex-wrap gap-2">
                                     <span className="text-white text-lg">SK하이닉스 Photo 공정 연구원</span>
@@ -56,17 +67,6 @@ export default function About() {
                                 <div className="flex flex-wrap gap-2">
                                     <span className="text-white text-lg">자소서/면접 전문 유료 컨설팅 수료</span>
                                 </div>
-                            </div>
-                        </div>
-
-                        {/* 오른쪽 이미지 */}
-                        <div className="flex-1">
-                            <div className="relative w-80 h-96 rounded-2xl overflow-hidden">
-                                <img
-                                    src="/img/desk_front.jpg"
-                                    alt="전문 컨설턴트"
-                                    className="object-cover w-full h-full"
-                                />
                             </div>
                         </div>
 
