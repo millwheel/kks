@@ -36,7 +36,7 @@ export default function Contact() {
 
             {/* 브랜드 신뢰 보조 채널 */}
             <section className="bg-[#f7f9ff] py-16 px-6">
-                <div className="max-w-6xl mx-auto">
+                <div className="max-w-4xl mx-auto">
                     <h2 className="text-2xl font-bold text-gray-600 text-center mb-4">
                         다양한 채널에서 김과장을 만나보세요!
                     </h2>
