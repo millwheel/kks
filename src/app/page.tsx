@@ -1,4 +1,5 @@
 import TestimonialSliderWrapper from '../components/HomeTestimonialSliderWrapper';
+import Link from 'next/link';
 
 // 후기 데이터 - 서버 컴포넌트에서 정의하여 SEO에 노출
 const testimonials = [
@@ -138,9 +139,11 @@ export default function Home() {
                 <h2 className="text-3xl font-bold mb-4 text-[#4655C7] p-5">
                     당신의 합격, 지금 시작해보세요.
                 </h2>
-                <button className="bg-[#4655C7] text-white px-8 py-4 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
-                    무료 상담 신청하기
-                </button>
+                <Link href="/contact">
+                    <button className="bg-[#4655C7] text-white px-8 py-4 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
+                        무료 상담 신청하기
+                    </button>
+                </Link>
             </section>
 
             {/* Footer */}

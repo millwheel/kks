@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Services() {
     return (
         <main className="bg-white text-gray-900 min-h-screen flex flex-col">
@@ -137,9 +139,11 @@ export default function Services() {
                 <h2 className="text-3xl font-bold mb-6 text-[#4655C7]">
                     합격을 부르는 자기소개서, 지금 시작하세요
                 </h2>
-                <button className="bg-[#4655C7] text-white px-8 py-4 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
-                    무료상담 신청하기
-                </button>
+                <Link href="/contact">
+                    <button className="bg-[#4655C7] text-white px-8 py-4 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
+                        무료상담 신청하기
+                    </button>
+                </Link>
             </section>
 
             {/* Footer */}

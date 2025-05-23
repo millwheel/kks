@@ -25,12 +25,6 @@ export default function Contact() {
                         />
                         카카오톡으로 상담하기
                     </button>
-                    <button
-                        onClick={() => window.location.href = 'mailto:kks7180@naver.com'}
-                        className="bg-[#4655C7] text-white px-8 py-4 rounded-full text-lg hover:bg-[#344199] transition flex items-center gap-2 hover:cursor-pointer"
-                    >
-                        📩 이메일로 문의하기
-                    </button>
                 </div>
             </section>
 
@@ -104,30 +98,6 @@ export default function Contact() {
                             </div>
                         ))}
                     </div>
-                </div>
-            </section>
-
-            {/* 최종 CTA */}
-            <section className="bg-[#4655C7] text-white text-center py-20 px-6">
-                <h2 className="text-3xl font-bold mb-4">
-                    합격을 향한 첫걸음, 지금 시작하세요
-                </h2>
-                <p className="text-lg mb-8 opacity-90">
-                    전문가의 도움으로 한 번에 합격하는 자소서를 완성해보세요
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button
-                        onClick={() => window.open('https://open.kakao.com/o/your-kakao-link', '_blank')}
-                        className="bg-white text-[#4655C7] px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition hover:cursor-pointer"
-                    >
-                        💬 카카오톡 상담 시작
-                    </button>
-                    <button
-                        onClick={() => window.location.href = 'mailto:kks7180@naver.com'}
-                        className="border-2 border-white text-white px-8 py-4 rounded-full text-lg hover:bg-white hover:text-[#4655C7] transition hover:cursor-pointer"
-                    >
-                        📩 이메일 문의
-                    </button>
                 </div>
             </section>
 
