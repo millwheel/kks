@@ -72,7 +72,7 @@ export default function Contact() {
             {/* FAQ 섹션 */}
             <section className="bg-[#f0f4fa] py-16 px-6">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-3xl font-bold text-[#4655C7] text-center mb-12">상담 전 필수 정보</h2>
+                    <h2 className="text-3xl font-bold text-[#4655C7] text-center mb-12">상담 신청 전 읽어주세요</h2>
                     <div className="space-y-6">
                         {[
                             {

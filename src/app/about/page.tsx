@@ -36,7 +36,7 @@ export default function About() {
                             <div className="mb-6 md:mb-8">
                                 <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-4">
                                     상위 1% 초격차<br />
-                                    자기소개서 전문
+                                    취업 컨설팅 전문
                                 </h2>
                             </div>
 
