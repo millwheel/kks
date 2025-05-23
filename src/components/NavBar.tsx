@@ -40,12 +40,12 @@ export default function Navbar() {
 
                     {/* 로그인 버튼 */}
                     <div className="hidden md:flex items-center">
-                        <Link
-                            href="/login"
-                            className="bg-[#4655C7] text-white px-4 py-2 rounded-full text-sm hover:bg-[#344199] transition"
-                        >
-                            로그인
-                        </Link>
+                        {/*<Link*/}
+                        {/*    href="/login"*/}
+                        {/*    className="bg-[#4655C7] text-white px-4 py-2 rounded-full text-sm hover:bg-[#344199] transition"*/}
+                        {/*>*/}
+                        {/*    로그인*/}
+                        {/*</Link>*/}
                     </div>
 
                     {/* 모바일 메뉴 버튼 */}
@@ -90,13 +90,13 @@ export default function Navbar() {
                                 {item.name}
                             </Link>
                         ))}
-                        <Link
-                            href="/login"
-                            className="block pl-3 pr-4 py-2 text-base font-medium text-white bg-[#4655C7] hover:bg-[#344199] mt-2"
-                            onClick={() => setMobileMenuOpen(false)}
-                        >
-                            로그인
-                        </Link>
+                        {/*<Link*/}
+                        {/*    href="/login"*/}
+                        {/*    className="block pl-3 pr-4 py-2 text-base font-medium text-white bg-[#4655C7] hover:bg-[#344199] mt-2"*/}
+                        {/*    onClick={() => setMobileMenuOpen(false)}*/}
+                        {/*>*/}
+                        {/*    로그인*/}
+                        {/*</Link>*/}
                     </div>
                 </div>
             )}
