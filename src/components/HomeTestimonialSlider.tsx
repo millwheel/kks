@@ -1,13 +1,8 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import {Testimonial} from "@/data/testimonials";
 
-// 후기 데이터 타입 정의
-type Testimonial = {
-    name: string;
-    title: string;
-    review: string;
-};
+import { useState, useEffect } from 'react';
 
 export default function TestimonialSlider({ testimonials }: { testimonials: Testimonial[] }) {
     // 현재 슬라이드 상태 관리

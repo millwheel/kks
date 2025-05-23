@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function About() {
     return (
         <main className="bg-white text-gray-900 min-h-screen flex flex-col">
@@ -11,49 +13,57 @@ export default function About() {
                     연간 1,000건 이상 자소서 첨삭 & 비대면 면접 컨설팅<br />
                     숨고/크몽 분야 1위, 합격률 82%의 실력
                 </p>
-                <div className="space-x-4">
-                    <button className="bg-[#4655C7] text-white px-6 py-3 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
-                        자소서 첨삭 서비스 보기
-                    </button>
-                    <button className="border-2 border-[#4655C7] text-[#4655C7] px-6 py-3 rounded-full text-lg hover:bg-[#f0f2ff] transition">
-                        후기 보기
-                    </button>
-                </div>
             </section>
 
-            {/* Consultant Introduction */}
-            <section className="bg-[#f7f9ff] py-16 px-6">
-                <div className="max-w-5xl mx-auto">
-                    <div className="text-center mb-12">
-                        <h2 className="text-3xl font-bold text-[#4655C7]">대기업 김과장은 누구인가요?</h2>
-                    </div>
+            {/* Profile */}
+            <section className="relative bg-gradient-to-br from-[#1a202c] via-[#2d3748] to-[#4a5568] py-20 px-6 overflow-hidden">
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                        <div className="bg-white p-8 rounded-xl shadow-md">
-                            <img
-                                src="/img/stand_front.jpg"
-                                alt="대기업 김과장"
-                                className="w-full h-auto rounded-lg mb-6"
-                            />
+                <div className="max-w-5xl mx-auto relative z-10">
+                    <div className="flex items-center">
+                        {/* 이미지 */}
+                        <div className="flex-1 pr-12">
+                            <div className="relative w-96 rounded-2xl overflow-hidden">
+                                <img
+                                    src="/img/stand_front.jpg"
+                                    alt="전문 컨설턴트"
+                                    className="object-cover w-full h-full"
+                                />
+                            </div>
                         </div>
-                        <div>
-                            <ul className="space-y-4">
-                                {[
-                                    "SK하이닉스 Photo 공정 연구원",
-                                    "전) 현대로템 철도사업부",
-                                    "삼성전자 반도체 연구소 공정개발 경력직 최종합격",
-                                    "연간 1천명 이상 클라이언트 컨설팅",
-                                    "자소서/면접 전문 유료 컨설팅 수료",
-                                    "유명 대기업 면접 합격률 90%+ 실적 보유",
-                                    "기업 서류 평가 및 면접관 경험"
-                                ].map((text, i) => (
-                                    <li key={i} className="flex items-start gap-3">
-                                        <span className="text-[#4655C7] mt-1">✔</span>
-                                        <span className="text-gray-800">{text}</span>
-                                    </li>
-                                ))}
-                            </ul>
+                        
+                        {/* 설명 */}
+                        <div className="flex-2">
+                            {/* 메인 타이틀 */}
+                            <div className="mb-8">
+                                <h2 className="text-5xl md:text-6xl font-bold text-white leading-tight mb-4">
+                                    상위 1% 초격차<br />
+                                    자기소개서 전문
+                                </h2>
+                            </div>
+
+                            {/* 세부사항 */}
+                            <div className="space-y-3 mb-8">
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="text-white text-lg">SK하이닉스 Photo 공정 연구원 출신</span>
+                                </div>
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="text-white text-lg">현대로템 철도사업부 출신</span>
+                                </div>
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="text-white text-lg">삼성전자 반도체 연구소 공정개발 경력직 최종 합격</span>
+                                </div>
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="text-white text-lg">연간 1천명 이상 클라이언트 컨설팅 경험 보유</span>
+                                </div>
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="text-white text-lg">굴지 대기업 면접 합격률 실적 다수 보유</span>
+                                </div>
+                                <div className="flex flex-wrap gap-2">
+                                    <span className="text-white text-lg">자소서/면접 전문 유료 컨설팅 수료</span>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
             </section>
@@ -61,21 +71,14 @@ export default function About() {
             {/* Specialized Fields */}
             <section className="bg-white py-16 px-6">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-3xl font-bold text-[#4655C7] text-center mb-12">내가 잘하는 분야는?</h2>
+                    <h2 className="text-3xl font-bold text-[#4655C7] text-center mb-12">[KKS 필독!] 스토리텔링 파트</h2>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        {[
-                            { category: "반도체", companies: "SK하이닉스, 삼성전자 DS, 삼성디스플레이" },
-                            { category: "자동차/중공업", companies: "현대자동차, 현대로템, 기아" },
-                            { category: "외국계 기업", companies: "마이크론, ASML, 램리서치 등" },
-                            { category: "공기업/공무직", companies: "한국수자원공사, 근로복지공단, 교통안전공단" },
-                            { category: "직무", companies: "생산기술 / R&D / 품질관리 / 공정기술 / 설계 / HR" }
-                        ].map((field, i) => (
-                            <div key={i} className="bg-[#f0f2ff] p-6 rounded-xl shadow-sm hover:shadow-md transition">
-                                <h3 className="font-bold text-xl mb-3 text-[#4655C7]">✅ {field.category}</h3>
-                                <p className="text-gray-700">{field.companies}</p>
-                            </div>
-                        ))}
+                    <div className="grid grid-cols-1 gap-8 content-center">
+                        <span>여기에 스토리텔링을 넣어서 신뢰감을 올려주게 만든다. (아래는 예시)</span>
+                        <span>~한 경험을 통해 컨설팅을 시작하게 되었습니다.</span>
+                        <span>~라는 가설을 세웠고, ~을 통해 결과를 검증해냈습니다</span>
+                        <span>~한 사람들의 ~부분의 가치를 올리는 방법에 대한 연구를 지속적으로 진행 중입니다.</span>
+                        <span className="font-bold">스토리 텔링 파트 직접 작성 요망</span>
                     </div>
                 </div>
             </section>
@@ -89,7 +92,7 @@ export default function About() {
                         {[
                             { count: "870명+", label: "누적 합격자 수" },
                             { count: "1,000건+", label: "연간 첨삭/컨설팅 건수" },
-                            { count: "최대 82%", label: "평균 자소서 합격률" },
+                            { count: "82%", label: "평균 자소서 합격률" },
                             { count: "150곳+", label: "최종 합격 기업" }
                         ].map((stat, i) => (
                             <div key={i} className="bg-white p-6 rounded-xl shadow-md text-center">
@@ -97,20 +100,6 @@ export default function About() {
                                 <div className="text-gray-700">{stat.label}</div>
                             </div>
                         ))}
-                    </div>
-
-                    <div className="bg-white p-8 rounded-xl shadow-md">
-                        <h3 className="font-bold text-xl mb-6 text-center text-[#4655C7]">주요 합격 기업</h3>
-                        <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
-                            {[
-                                "ASML", "삼성전자", "SK하이닉스", "현대자동차", "LG디스플레이",
-                                "현대로템", "삼성SDI", "한국전력", "수자원공사", "포스코"
-                            ].map((company, i) => (
-                                <div key={i} className="bg-[#f7f9ff] p-3 rounded-lg text-center text-gray-800 font-medium">
-                                    {company}
-                                </div>
-                            ))}
-                        </div>
                     </div>
                 </div>
             </section>
@@ -140,11 +129,16 @@ export default function About() {
             {/* CTA Section */}
             <section className="bg-[#f0f2ff] text-center py-24 px-6">
                 <h2 className="text-3xl font-bold mb-6 text-[#4655C7]">
-                    합격을 향한 첫걸음, 지금 시작하세요
+                    합격으로 가는 가장 빠른 길
                 </h2>
-                <button className="bg-[#4655C7] text-white px-8 py-4 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
-                    무료 상담 신청하기
-                </button>
+                <p className="text-lg text-[#4655C7] mb-6">
+                    서류부터 면접까지 한 방에 끝내기
+                </p>
+                <Link href="/contact">
+                    <button className="bg-[#4655C7] text-white px-8 py-4 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
+                        무료 상담 신청하기
+                    </button>
+                </Link>
             </section>
 
             {/* Footer */}

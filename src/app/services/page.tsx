@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Services() {
     return (
         <main className="bg-white text-gray-900 min-h-screen flex flex-col">
@@ -10,20 +12,12 @@ export default function Services() {
                     대기업 인사담당자 출신이 직접 첨삭하는 1:1 맞춤 피드백<br />
                     합격을 위한 최고의 선택
                 </p>
-                <div className="space-x-4">
-                    <button className="bg-[#4655C7] text-white px-6 py-3 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
-                        첨삭 신청하기
-                    </button>
-                    <button className="border-2 border-[#4655C7] text-[#4655C7] px-6 py-3 rounded-full text-lg hover:bg-[#f0f2ff] transition">
-                        합격 후기 보기
-                    </button>
-                </div>
             </section>
 
             {/* Service Introduction */}
             <section className="bg-[#f0f4fa] py-16 px-6">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-3xl font-bold text-[#4655C7] mb-8">대기업 인사담당자 출신이 말하는 합격 자기소개서</h2>
+                    <h2 className="text-3xl font-bold text-[#4655C7] mb-8 text-center">대기업 출신이 말하는 합격 자기소개서</h2>
                     <div className="bg-white p-8 rounded-xl shadow-md">
                         <ul className="space-y-4">
                             {[
@@ -57,9 +51,13 @@ export default function Services() {
                                 <h3 className="font-bold text-xl mb-3 text-[#4655C7]">{s.name}</h3>
                                 <p className="text-gray-700 mb-4">{s.desc}</p>
                                 <div className="text-right font-semibold text-xl text-[#4655C7] mb-4">{s.price}</div>
-                                <button className="w-full py-3 bg-[#4655C7] text-white rounded-full hover:bg-[#344199] transition">
-                                    신청하기
-                                </button>
+
+                                <Link href="/contact">
+                                    <button className="w-full py-3 bg-[#4655C7] text-white rounded-full hover:bg-[#344199] transition hover:cursor-pointer">
+                                        신청하기
+                                    </button>
+                                </Link>
+
                             </div>
                         ))}
                     </div>
@@ -121,7 +119,6 @@ export default function Services() {
                         {[
                             { q: "언제까지 받을 수 있나요?", a: "보통 24시간 이내, 최대 48시간입니다." },
                             { q: "첨삭 후 수정 요청은 가능한가요?", a: "1회 무료 재첨삭 제공됩니다." },
-                            { q: "결제는 어떻게 진행되나요?", a: "카드결제, 계좌이체, 무통장입금이 가능합니다." },
                             { q: "특정 기업에 맞는 첨삭도 가능한가요?", a: "네, 프리미엄 첨삭에서는 지원 기업의 특성과 성향을 고려한 맞춤형 첨삭을 제공해 드립니다." }
                         ].map((item, i) => (
                             <div key={i} className="bg-[#f7f9ff] p-6 rounded-xl">
@@ -136,11 +133,16 @@ export default function Services() {
             {/* CTA Section */}
             <section className="bg-[#f0f2ff] text-center py-24 px-6">
                 <h2 className="text-3xl font-bold mb-6 text-[#4655C7]">
-                    합격을 부르는 자기소개서, 지금 시작하세요
+                    합격으로 가는 가장 빠른 길
                 </h2>
-                <button className="bg-[#4655C7] text-white px-8 py-4 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
-                    지금 첨삭 신청하기
-                </button>
+                <p className="text-lg text-[#4655C7] mb-6">
+                    서류부터 면접까지 한 방에 끝내기
+                </p>
+                <Link href="/contact">
+                    <button className="bg-[#4655C7] text-white px-8 py-4 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
+                        무료 상담 신청하기
+                    </button>
+                </Link>
             </section>
 
             {/* Footer */}
