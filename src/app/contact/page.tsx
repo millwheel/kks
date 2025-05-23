@@ -41,11 +41,10 @@ export default function Contact() {
 
                     <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
                         {[
-                            { name: '숨고', icon: '🛒', desc: '숨고 프로필 보기', link: '#' },
-                            { name: '크몽', icon: '🛍️', desc: '크몽 페이지로', link: '#' },
-                            { name: '네이버 블로그', icon: '📘', desc: '블로그 보기', link: '#' },
-                            { name: '인스타그램', icon: '📷', desc: '인스타그램 DM', link: '#' },
-                            { name: '당근마켓', icon: '📦', desc: '당근에서 상담', link: '#' }
+                            { name: '숨고', icon: '/icons/soomgo.png', desc: '숨고 프로필 보기', link: 'https://soomgo.com/profile/users/10562016' },
+                            { name: '크몽', icon: '🛍️', desc: '크몽 페이지로', link: 'https://kmong.com/gig/645507' },
+                            { name: '네이버 블로그', icon: '📘', desc: '블로그 보기', link: 'https://blog.naver.com/pass_everything' },
+                            { name: '인스타그램', icon: '📷', desc: '인스타그램 DM', link: 'https://www.instagram.com/allpass_everything/' },
                         ].map((channel, i) => (
                             <button
                                 key={i}
