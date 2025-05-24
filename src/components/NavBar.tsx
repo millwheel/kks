@@ -7,7 +7,6 @@ export default function Navbar() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
     const navItems = [
-        { name: '대기업김과장은 누구인가?', href: '/about' },
         { name: '대표 서비스', href: '/services' },
         { name: '후기 및 합격 사례', href: '/testimonials' },
         { name: '상담 신청', href: '/contact' },
@@ -15,22 +14,22 @@ export default function Navbar() {
 
     return (
         <nav className="bg-white shadow-sm">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16">
                     {/* 로고 */}
-                    <div className="flex-shrink-0 flex items-center pl-5">
+                    <div className="flex-1 flex items-center pl-8">
                         <Link href="/" className="text-[#4655C7] text-xl font-extrabold">
-                            대기업김과장
+                            대기업김과장의 합격하는 자소서
                         </Link>
                     </div>
 
                     {/* 데스크톱 메뉴 */}
-                    <div className="hidden md:ml-6 md:flex md:space-x-8">
+                    <div className="hidden md:flex md:space-x-8 flex-1">
                         {navItems.map((item) => (
                             <Link
                                 key={item.name}
                                 href={item.href}
-                                className="inline-flex items-center px-1 pt-1 text-base font-medium text-gray-700 hover:text-[#4655C7] hover:border-b-2 hover:border-[#4655C7]"
+                                className="inline-flex items-center px-1 pt-1 text-lg font-semibold text-gray-700 hover:text-[#4655C7] hover:border-b-2 hover:border-[#4655C7]"
                             >
                                 {item.name}
                             </Link>
@@ -38,14 +37,14 @@ export default function Navbar() {
                     </div>
 
                     {/* 로그인 버튼 */}
-                    <div className="hidden md:flex items-center">
-                        {/*<Link*/}
-                        {/*    href="/login"*/}
-                        {/*    className="bg-[#4655C7] text-white px-4 py-2 rounded-full text-sm hover:bg-[#344199] transition"*/}
-                        {/*>*/}
-                        {/*    로그인*/}
-                        {/*</Link>*/}
-                    </div>
+                    {/*<div className="hidden md:flex items-center">*/}
+                    {/*    <Link*/}
+                    {/*        href="/login"*/}
+                    {/*        className="bg-[#4655C7] text-white px-4 py-2 rounded-full text-sm hover:bg-[#344199] transition"*/}
+                    {/*    >*/}
+                    {/*        로그인*/}
+                    {/*    </Link>*/}
+                    {/*</div>*/}
 
                     {/* 모바일 메뉴 버튼 */}
                     <div className="flex items-center md:hidden">
