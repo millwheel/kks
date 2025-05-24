@@ -31,12 +31,12 @@ export default function Contact() {
             {/* 브랜드 신뢰 보조 채널 */}
             <section className="bg-[#f7f9ff] py-16 px-6">
                 <div className="max-w-4xl mx-auto">
-                    <h2 className="text-2xl font-bold text-gray-600 text-center mb-4">
-                        다양한 채널에서 김과장을 만나보세요!
+                    <h2 className="text-3xl font-bold text-[#4655C7] text-center mb-8">
+                        다양한 채널에서 김과장을 만나보세요
                     </h2>
-                    <p className="text-center text-gray-500 mb-12">
-                        기존 이용자들의 후기와 서비스를 확인해보세요
-                    </p>
+                    <h3 className="text-xl font-bold text-gray-800 mb-8 text-center">
+                        기존 이용자들의 후기와 무료 콘텐츠를 확인해보세요
+                    </h3>
 
                     <div className="grid md:grid-cols-5 gap-4">
                         {[
@@ -77,7 +77,7 @@ export default function Contact() {
                             },
                             {
                                 q: "카카오톡 상담 시 어떤 내용을 먼저 보내야 하나요?",
-                                a: "① 지원하시는 기업/직무 ② 현재 준비 상황 ③ 원하시는 서비스(자소서 첨삭, 면접 연습 등) ④ 마감일정을 알려주세요."
+                                a: "① 지원하시는 기업/직무, ② 현재 준비 상황, ③ 원하시는 서비스(자소서 첨삭, 면접 연습 등), ④ 마감일정을 알려주세요."
                             },
                             {
                                 q: "자기소개서 첨삭 요청은 어떤 방식으로 이루어지나요?",
@@ -90,7 +90,7 @@ export default function Contact() {
                         ].map((item, i) => (
                             <div key={i} className="bg-white p-6 rounded-xl shadow-sm">
                                 <p className="font-bold text-lg text-[#4655C7] mb-3">Q. {item.q}</p>
-                                <p className="text-gray-700 leading-relaxed">A. {item.a}</p>
+                                <p className="font-bold text-gray-700 leading-relaxed">&nbsp;A. {item.a}</p>
                             </div>
                         ))}
                     </div>

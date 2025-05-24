@@ -17,10 +17,10 @@ export default function About() {
 
             {/* Profile */}
             <section className="relative bg-gradient-to-br from-[#1a202c] via-[#2d3748] to-[#4a5568] py-12 md:py-20 px-6 overflow-hidden">
-                <div className="max-w-5xl mx-auto relative z-10">
+                <div className="max-w-4xl mx-auto relative z-10">
                     <div className="flex flex-col md:flex-row items-center">
                         {/* 이미지 */}
-                        <div className="w-full md:flex-1 md:pr-12 mb-8 md:mb-0">
+                        <div className="w-full md:flex-1 pr-12 mb-8 md:mb-0">
                             <div className="relative w-64 md:w-96 mx-auto md:mx-0 rounded-2xl overflow-hidden">
                                 <img
                                     src="/img/stand_front.jpg"
