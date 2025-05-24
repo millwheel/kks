@@ -5,6 +5,7 @@ import HomeCompanySlider from "@/components/HomeCompanySlider";
 import { testimonialAbstracts } from '@/data/testimonialAbstract';
 import { companies } from '@/data/companies';
 import AnimatedText from "@/components/AnimatedText";
+import BubblePopAnimation from "@/components/BubblePopAnimation";
 
 export default function Home() {
     return (
@@ -73,21 +74,15 @@ export default function Home() {
             {/* 취업, 스펙이 부족해서 떨어지는 걸까요? 섹션 */}
             <section className="bg-[#f0f4fa] py-16 px-6">
                 <div className="max-w-5xl mx-auto">
-                    <AnimatedText delay={0}>
-                        <h1 className="text-4xl font-bold text-[#4655C7] text-center mb-8">
-                            취업, 스펙이 부족해서 떨어지는 걸까요?
-                        </h1>
-                    </AnimatedText>
-                    <AnimatedText delay={200}>
-                        <h2 className="text-2xl font-bold text-gray-800 text-center mb-8">
-                            또 자격증, 인턴, 대외활동을 찾아 헤매시나요?
-                        </h2>
-                    </AnimatedText>
-                    <AnimatedText delay={400}>
-                        <h2 className="text-xl font-semibold text-[#4655C7] text-center mb-8">
-                            채용 담당자는 그보다 <span className="font-bold border-[#4655C7] pb-1">&#39;읽고 싶은 자기소개서&#39;</span>를 찾고 있습니다.
-                        </h2>
-                    </AnimatedText>
+                    <h1 className="text-4xl font-bold text-[#4655C7] text-center mb-8">
+                        취업, 스펙이 부족해서 떨어지는 걸까요?
+                    </h1>
+                    <h2 className="text-2xl font-bold text-gray-800 text-center mb-8">
+                        또 자격증, 인턴, 대외활동을 찾아 헤매시나요?
+                    </h2>
+                    <h2 className="text-xl font-semibold text-[#4655C7] text-center mb-8">
+                        채용 담당자는 그보다 <span className="font-bold border-[#4655C7] pb-1">&#39;읽고 싶은 자기소개서&#39;</span>를 찾고 있습니다.
+                    </h2>
                     <div className="max-w-xl mx-auto">
                         <p className="text-lg font-semibold text-gray-600 mb-8">
                             👉 스펙보다 중요한 건, 전달력입니다. <br/>
@@ -102,28 +97,33 @@ export default function Home() {
                                 <h4 className="font-bold text-center text-gray-600 text-xl mb-8 pb-4 border-b border-gray-200">불합격 사례</h4>
 
                                 {/* 지원자 말풍선 (왼쪽) */}
-                                <div className="flex justify-start">
-                                    <div className="max-w-sm">
-                                        <p className="text-sm font-semibold text-gray-700 mb-2">지원자</p>
-                                        <div className="bg-gray-100 p-4 rounded-2xl rounded-tl-none shadow-md border border-gray-200">
-                                            <p className="text-gray-700">
-                                                &#34;저는 관련 자격증도 있고, 학점도 높고, 인턴 경험도 있는데 왜 계속 떨어지는지 모르겠어요. 더 이상 보완할 스펙이 없는데...&#34;
-                                            </p>
+                                <BubblePopAnimation>
+                                    <div className="flex justify-start">
+                                        <div className="max-w-sm">
+                                            <p className="text-sm font-semibold text-gray-700 mb-2">지원자</p>
+                                            <div className="bg-gray-100 p-4 rounded-2xl rounded-tl-none shadow-md border border-gray-200">
+                                                <p className="text-gray-700">
+                                                    &#34;저는 관련 자격증도 있고, 학점도 높고, 인턴 경험도 있는데 왜 계속 떨어지는지 모르겠어요. 더 이상 보완할 스펙이 없는데...&#34;
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </BubblePopAnimation>
+
 
                                 {/* 컨설턴트 말풍선 (오른쪽) */}
-                                <div className="flex justify-end">
-                                    <div className="max-w-sm">
-                                        <p className="text-sm font-semibold text-[#4655C7] mb-2 text-right">컨설턴트</p>
-                                        <div className="bg-[#4655C7] p-4 rounded-2xl rounded-tr-none shadow-md">
-                                            <p className="text-white">
-                                                스펙을 아무리 쌓아도 그것을 자기소개서에서 효과적으로 표현하지 못하면 합격으로 이어지지 않습니다.
-                                            </p>
+                                <BubblePopAnimation delay={400}>
+                                    <div className="flex justify-end">
+                                        <div className="max-w-sm">
+                                            <p className="text-sm font-semibold text-[#4655C7] mb-2 text-right">컨설턴트</p>
+                                            <div className="bg-[#4655C7] p-4 rounded-2xl rounded-tr-none shadow-md">
+                                                <p className="text-white">
+                                                    스펙을 아무리 쌓아도 그것을 자기소개서에서 효과적으로 표현하지 못하면 합격으로 이어지지 않습니다.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </BubblePopAnimation>
                             </div>
 
                             {/* 합격 사례 */}
@@ -131,28 +131,33 @@ export default function Home() {
                                 <h4 className="font-bold text-center text-[#4655C7] text-xl mb-8 pb-4 border-b border-blue-200">합격 사례</h4>
 
                                 {/* 지원자 말풍선 (왼쪽) */}
-                                <div className="flex justify-start">
-                                    <div className="max-w-sm">
-                                        <p className="text-sm font-semibold text-gray-700 mb-2">지원자</p>
-                                        <div className="bg-blue-50 p-4 rounded-2xl rounded-tl-none shadow-md border border-blue-200">
-                                            <p className="text-gray-700">
-                                                &#34;전공과 무관한 분야였고, 특별한 인턴 경험도 없었지만 제가 가진 경험을 회사가 원하는 방향으로 표현하는 데 집중했더니 합격했어요!&#34;
-                                            </p>
+                                <BubblePopAnimation>
+                                    <div className="flex justify-start">
+                                        <div className="max-w-sm">
+                                            <p className="text-sm font-semibold text-gray-700 mb-2">지원자</p>
+                                            <div className="bg-blue-50 p-4 rounded-2xl rounded-tl-none shadow-md border border-blue-200">
+                                                <p className="text-gray-700">
+                                                    &#34;전공과 무관한 분야였고, 특별한 인턴 경험도 없었지만 제가 가진 경험을 회사가 원하는 방향으로 표현하는 데 집중했더니 합격했어요!&#34;
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </BubblePopAnimation>
+
 
                                 {/* 컨설턴트 말풍선 (오른쪽) */}
-                                <div className="flex justify-end">
-                                    <div className="max-w-sm">
-                                        <p className="text-sm font-semibold text-[#4655C7] mb-2 text-right">컨설턴트</p>
-                                        <div className="bg-[#4655C7] p-4 rounded-2xl rounded-tr-none shadow-md">
-                                            <p className="text-white">
-                                                같은 경험도 어떻게 표현하느냐에 따라 인사담당자의 눈에 완전히 다르게 보입니다.
-                                            </p>
+                                <BubblePopAnimation delay={400}>
+                                    <div className="flex justify-end">
+                                        <div className="max-w-sm">
+                                            <p className="text-sm font-semibold text-[#4655C7] mb-2 text-right">컨설턴트</p>
+                                            <div className="bg-[#4655C7] p-4 rounded-2xl rounded-tr-none shadow-md">
+                                                <p className="text-white">
+                                                    같은 경험도 어떻게 표현하느냐에 따라 인사담당자의 눈에 완전히 다르게 보입니다.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </BubblePopAnimation>
                             </div>
                         </div>
                     </div>
@@ -163,21 +168,15 @@ export default function Home() {
             {/* 기업에서 원하는 대화법이 있습니다 섹션 */}
             <section className="bg-gray-50 py-16 px-6">
                 <div className="max-w-5xl mx-auto">
-                    <AnimatedText delay={0}>
-                        <h1 className="text-4xl font-bold text-[#4655C7] text-center mb-8">
-                            기업에서 원하는 대화법이 있습니다
-                        </h1>
-                    </AnimatedText>
-                    <AnimatedText delay={200}>
-                        <h2 className="text-2xl md:text-2xl font-bold text-gray-800 mb-6 text-center">
-                            면접에서 번번히 고배를 마시나요?
-                        </h2>
-                    </AnimatedText>
-                    <AnimatedText delay={400}>
-                        <h3 className="text-lg md:text-xl font-semibold text-[#4655C7] text-center mb-8">
-                            채용담당자가 원하는 소통 방식을 안다면, 손쉽게 풀어나갈 수 있습니다.
-                        </h3>
-                    </AnimatedText>
+                    <h1 className="text-4xl font-bold text-[#4655C7] text-center mb-8">
+                        기업에서 원하는 대화법이 있습니다
+                    </h1>
+                    <h2 className="text-2xl md:text-2xl font-bold text-gray-800 mb-6 text-center">
+                        면접에서 번번히 고배를 마시나요?
+                    </h2>
+                    <h3 className="text-lg md:text-xl font-semibold text-[#4655C7] text-center mb-8">
+                        채용담당자가 원하는 소통 방식을 안다면, 손쉽게 풀어나갈 수 있습니다.
+                    </h3>
                     <div className="max-w-xl mx-auto">
                         <p className="text-lg font-semibold text-gray-600 mb-8">
                             👉 답변이 아닌 대화를 준비하세요. <br/>
@@ -193,34 +192,41 @@ export default function Home() {
                                 <h4 className="font-bold text-center text-gray-600 text-xl mb-8 pb-4 border-b border-gray-200">실패하는 대화</h4>
 
                                 {/* 면접관 질문 (오른쪽) */}
-                                <div className="flex justify-end">
-                                    <div className="max-w-sm">
-                                        <p className="text-sm font-semibold text-gray-700 mb-2 text-right">면접관</p>
-                                        <div className="bg-gray-100 p-4 rounded-2xl rounded-tr-none shadow-md border border-gray-200">
-                                            <p className="text-gray-700">&#34;지원자님의 강점이 무엇인가요?&#34;</p>
+                                <BubblePopAnimation>
+                                    <div className="flex justify-end">
+                                        <div className="max-w-sm">
+                                            <p className="text-sm font-semibold text-gray-700 mb-2 text-right">면접관</p>
+                                            <div className="bg-gray-100 p-4 rounded-2xl rounded-tr-none shadow-md border border-gray-200">
+                                                <p className="text-gray-700">&#34;지원자님의 강점이 무엇인가요?&#34;</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </BubblePopAnimation>
 
                                 {/* 지원자 답변 (왼쪽) */}
-                                <div className="flex justify-start">
-                                    <div className="max-w-sm">
-                                        <p className="text-sm font-semibold text-gray-700 mb-2">지원자</p>
-                                        <div className="bg-gray-100 p-4 rounded-2xl rounded-tl-none shadow-md border border-gray-200">
-                                            <p className="text-gray-700">&#34;저는 성실하고 책임감이 강합니다. 맡은 일은 끝까지 해내는 성격입니다.&#34;</p>
+                                <BubblePopAnimation delay={400}>
+                                    <div className="flex justify-start">
+                                        <div className="max-w-sm">
+                                            <p className="text-sm font-semibold text-gray-700 mb-2">지원자</p>
+                                            <div className="bg-gray-100 p-4 rounded-2xl rounded-tl-none shadow-md border border-gray-200">
+                                                <p className="text-gray-700">&#34;저는 성실하고 책임감이 강합니다. 맡은 일은 끝까지 해내는 성격입니다.&#34;</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </BubblePopAnimation>
+
 
                                 {/* 면접관 속마음 (오른쪽) */}
-                                <div className="flex justify-end">
-                                    <div className="max-w-sm">
-                                        <p className="text-sm font-semibold text-gray-700 mb-2 text-right">면접관 (속마음)</p>
-                                        <div className="bg-red-50 p-4 rounded-2xl rounded-tr-none shadow-md border border-red-200">
-                                            <p className="text-red-700 italic">&#39;모든 지원자가 하는 말이네... 구체적인 사례가 없어 신뢰하기 어렵다.&#39;</p>
+                                <BubblePopAnimation delay={600}>
+                                    <div className="flex justify-end">
+                                        <div className="max-w-sm">
+                                            <p className="text-sm font-semibold text-gray-700 mb-2 text-right">면접관 (속마음)</p>
+                                            <div className="bg-red-50 p-4 rounded-2xl rounded-tr-none shadow-md border border-red-200">
+                                                <p className="text-red-700 italic">&#39;모든 지원자가 하는 말이네... 구체적인 사례가 없어 신뢰하기 어렵다.&#39;</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </BubblePopAnimation>
                             </div>
 
                             {/* 성공 대화 */}
@@ -228,34 +234,40 @@ export default function Home() {
                                 <h4 className="font-bold text-center text-[#4655C7] text-xl mb-8 pb-4 border-b border-blue-200">성공하는 대화</h4>
 
                                 {/* 면접관 질문 (오른쪽) */}
-                                <div className="flex justify-end">
-                                    <div className="max-w-sm">
-                                        <p className="text-sm font-semibold text-gray-700 mb-2 text-right">면접관</p>
-                                        <div className="bg-gray-100 p-4 rounded-2xl rounded-tr-none shadow-md border border-gray-200">
-                                            <p className="text-gray-700">&#34;지원자님의 강점이 무엇인가요?&#34;</p>
+                                <BubblePopAnimation>
+                                    <div className="flex justify-end">
+                                        <div className="max-w-sm">
+                                            <p className="text-sm font-semibold text-gray-700 mb-2 text-right">면접관</p>
+                                            <div className="bg-gray-100 p-4 rounded-2xl rounded-tr-none shadow-md border border-gray-200">
+                                                <p className="text-gray-700">&#34;지원자님의 강점이 무엇인가요?&#34;</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </BubblePopAnimation>
 
                                 {/* 지원자 답변 (왼쪽) */}
-                                <div className="flex justify-start">
-                                    <div className="max-w-lg">
-                                        <p className="text-sm font-semibold text-gray-700 mb-2">지원자</p>
-                                        <div className="bg-blue-50 p-4 rounded-2xl rounded-tl-none shadow-md border border-blue-200">
-                                            <p className="text-gray-700">&#34;저는 목표 달성을 위한 체계적인 실행력이 강점입니다. 학부 연구 프로젝트에서 예상치 못한 문제가 발생했을 때 (중략) ~를 통해 원인을 세분화하고 팀원들과 협업하여 (중략) ~한 전략을 통해 일정 내에 문제를 해결했습니다. 이러한 경험이 귀사의 R&D 프로젝트에도 도움이 될 것이라 생각합니다.&#34;</p>
+                                <BubblePopAnimation delay={400}>
+                                    <div className="flex justify-start">
+                                        <div className="max-w-lg">
+                                            <p className="text-sm font-semibold text-gray-700 mb-2">지원자</p>
+                                            <div className="bg-blue-50 p-4 rounded-2xl rounded-tl-none shadow-md border border-blue-200">
+                                                <p className="text-gray-700">&#34;저는 목표 달성을 위한 체계적인 실행력이 강점입니다. 학부 연구 프로젝트에서 예상치 못한 문제가 발생했을 때 (중략) ~를 통해 원인을 세분화하고 팀원들과 협업하여 (중략) ~한 전략을 통해 일정 내에 문제를 해결했습니다. 이러한 경험이 귀사의 R&D 프로젝트에도 도움이 될 것이라 생각합니다.&#34;</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </BubblePopAnimation>
 
                                 {/* 면접관 속마음 (오른쪽) */}
-                                <div className="flex justify-end">
-                                    <div className="max-w-sm">
-                                        <p className="text-sm font-semibold text-gray-700 mb-2 text-right">면접관 (속마음)</p>
-                                        <div className="bg-green-50 p-4 rounded-2xl rounded-tr-none shadow-md border border-green-200">
-                                            <p className="text-green-700 italic">&#39;구체적인 사례와 우리 회사와의 연관성까지 언급했네. 준비가 잘 되어 있군.&#39;</p>
+                                <BubblePopAnimation delay={600}>
+                                    <div className="flex justify-end">
+                                        <div className="max-w-sm">
+                                            <p className="text-sm font-semibold text-gray-700 mb-2 text-right">면접관 (속마음)</p>
+                                            <div className="bg-green-50 p-4 rounded-2xl rounded-tr-none shadow-md border border-green-200">
+                                                <p className="text-green-700 italic">&#39;구체적인 사례와 우리 회사와의 연관성까지 언급했네. 준비가 잘 되어 있군.&#39;</p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
+                                </BubblePopAnimation>
                             </div>
 
                         </div>
