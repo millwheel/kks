@@ -8,11 +8,11 @@ export default function About() {
                 <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#4655C7] p-5">
                     870명 합격의 비밀, 대기업김과장
                 </h1>
-                <p className="text-lg text-[#4655C7] mb-6">
+                <h2 className="text-lg text-[#4655C7] mb-6">
                     SK하이닉스·현대로템 출신 취업 전문가<br />
                     연간 1,000건 이상 자소서 첨삭 & 비대면 면접 컨설팅<br />
                     숨고/크몽 분야 1위, 합격률 82%의 실력
-                </p>
+                </h2>
             </section>
 
             {/* Profile */}

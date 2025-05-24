@@ -13,10 +13,10 @@ export default function Home() {
                 <h1 className="text-5xl font-bold mb-4 text-[#4655C7] p-5">
                     합격을 부르는 자기소개서 & 면접 컨설팅
                 </h1>
-                <p className="text-lg text-[#4655C7] mb-6">
-                    SK, 공기업, 대기업 최종 합격자 배출!<br />
+                <h2 className="text-lg text-[#4655C7] mb-6">
+                    공기업, 대기업 최종 합격자 다수 배출!<br />
                     실전 중심 맞춤형 피드백으로 당신의 합격을 이끕니다. <br />
-                </p>
+                </h2>
                 <Link href="/contact">
                     <button className="bg-[#4655C7] text-white px-8 py-4 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
                         무료 상담 신청하기
@@ -27,26 +27,24 @@ export default function Home() {
             {/* 취업, 스펙이 부족해서 떨어지는 걸까요? 섹션 */}
             <section className="bg-[#f7f9ff] py-16 px-6">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-4xl font-bold text-[#4655C7] text-center mb-8">
+                    <h1 className="text-4xl font-bold text-[#4655C7] text-center mb-8">
                         취업, 스펙이 부족해서 떨어지는 걸까요?
+                    </h1>
+                    <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-6 text-center">
+                        또 자격증, 인턴, 대외활동을 찾아 헤매시나요?
                     </h2>
+                    <h3 className="text-lg md:text-xl font-semibold text-[#4655C7] text-center mb-8">
+                        채용 담당자는 그보다 <span className="font-bold border-b-2 border-[#4655C7] pb-1">&#39;읽고 싶은 자기소개서&#39;</span>를 찾고 있습니다.
+                    </h3>
 
-                    <div className="bg-white p-8 rounded-xl shadow-md mb-10">
-                        <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-6 text-center">
-                            또 자격증, 인턴, 대외활동을 찾아 헤매시나요?
-                        </h3>
-                        <p className="text-lg md:text-xl font-semibold text-[#4655C7] text-center mb-8">
-                            하지만 채용 담당자는 그보다 <span className="font-bold border-b-2 border-[#4655C7] pb-1">&#39;읽고 싶은 자기소개서&#39;</span>를 찾고 있습니다.
-                        </p>
-
+                    <div className="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-md mb-10">
                         <div className="space-y-5 mb-8">
                             {[
                                 "스펙보다 중요한 건, 전달력입니다.",
                                 "비슷한 배경, 비슷한 경험 속에서도 합격자를 만드는 건 결국 '표현의 차이'입니다.",
-                                "불합격 이유를 몰라서 방황하고 있다면, 당신은 혼자가 아닙니다."
                             ].map((text, i) => (
                                 <div key={i} className="flex items-start gap-3">
-                                    <span className="text-[#4655C7] font-bold mt-1">✦</span>
+
                                     <p className="text-gray-700">{text}</p>
                                 </div>
                             ))}

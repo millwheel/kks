@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "대기업김과장",
-  description: "합격으로 가는 가장 빠른 방법",
+  title: "대기업김과장 | 취업 걱정 오늘부터 그만",
+  description: "현대로템, SK하이닉스 출신 컨설턴트가 제공하는 합격을 부르는 실전 중심 취업 컨설팅. 대기업 취업 전문 컨설턴트가 제공하는 자소서 작성 및 면접 전략",
 };
 
 export default function RootLayout({
