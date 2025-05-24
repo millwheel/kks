@@ -1,10 +1,10 @@
 'use client';
 
-import {Testimonial} from "@/data/testimonials";
 
 import { useState, useEffect } from 'react';
+import {TestimonialAbstract} from "@/data/testimonialAbstract";
 
-export default function TestimonialSlider({ testimonials }: { testimonials: Testimonial[] }) {
+export default function TestimonialSlider({ testimonials }: { testimonials: TestimonialAbstract[] }) {
     // 현재 슬라이드 상태 관리
     const [currentSlide, setCurrentSlide] = useState(0);
     const [itemsPerView, setItemsPerView] = useState(3);
@@ -60,7 +60,7 @@ export default function TestimonialSlider({ testimonials }: { testimonials: Test
                             >
                                 <div className="bg-gray-50 border border-gray-200 p-6 rounded-xl h-full flex flex-col">
                                     <h3 className="text-lg font-bold mb-3 text-[#4655C7]">{item.title}</h3>
-                                    <p className="text-gray-700 text-sm mb-4 flex-grow">{item.review}</p>
+                                    <p className="text-gray-700 text-sm mb-4 flex-grow">{item.content}</p>
                                     <div className="mt-auto">
                                         <div className="flex items-center mt-4">
                                             <div className="bg-[#4655C7] text-white w-8 h-8 rounded-full flex items-center justify-center mr-2">

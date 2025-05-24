@@ -17,10 +17,10 @@ export default function About() {
 
             {/* Profile */}
             <section className="relative bg-gradient-to-br from-[#1a202c] via-[#2d3748] to-[#4a5568] py-12 md:py-20 px-6 overflow-hidden">
-                <div className="max-w-5xl mx-auto relative z-10">
+                <div className="max-w-4xl mx-auto relative z-10">
                     <div className="flex flex-col md:flex-row items-center">
                         {/* 이미지 */}
-                        <div className="w-full md:flex-1 md:pr-12 mb-8 md:mb-0">
+                        <div className="w-full md:flex-1 pr-12 mb-8 md:mb-0">
                             <div className="relative w-64 md:w-96 mx-auto md:mx-0 rounded-2xl overflow-hidden">
                                 <img
                                     src="/img/stand_front.jpg"
@@ -112,7 +112,7 @@ export default function About() {
                             { icon: "🧠", title: "7가지 핵심 포인트 기반 첨삭", desc: "단순 문법 수정이 아닌, 기업 맞춤형 합격 전략을 담은 전문적인 피드백을 제공합니다." },
                             { icon: "📄", title: "예상 면접 질문 리스트 제공", desc: "자기소개서를 바탕으로 실제 면접에서 물어볼 가능성이 높은 질문들을 미리 예측하여 제공합니다." },
                             { icon: "🗣️", title: "1분 자기소개, 지원동기, 마무리 멘트까지 피드백", desc: "지원자가 면접에서 좋은 첫인상과 마지막 인상을 남길 수 있도록 핵심 멘트를 코칭합니다." },
-                            { icon: "🎯", title: "합격자 자소서 무료 제공 (요청 시)", desc: "희망 기업의 실제 합격한 자기소개서를 참고자료로 제공하여 방향성을 잡을 수 있도록 돕습니다." }
+                            { icon: "🎯", title: "합격자 자소서 무료 제공", desc: "희망 기업의 실제 합격한 자기소개서를 참고자료로 제공하여 방향성을 잡을 수 있도록 돕습니다." }
                         ].map((item, i) => (
                             <div key={i} className="bg-[#f7f9ff] p-6 rounded-xl shadow-md">
                                 <div className="text-3xl mb-4">{item.icon}</div>
