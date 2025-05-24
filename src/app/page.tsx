@@ -4,12 +4,13 @@ import HomeCompanySlider from "@/components/HomeCompanySlider";
 
 import { testimonialAbstracts } from '@/data/testimonialAbstract';
 import { companies } from '@/data/companies';
+import AnimatedText from "@/components/AnimatedText";
 
 export default function Home() {
     return (
         <main className="bg-white text-gray-900 min-h-screen flex flex-col">
             {/* Hero Section */}
-            <section className="bg-[#f0f2ff] py-20 px-6">
+            <section className="bg-gradient-to-br from-[#f0f2ff] via-[#e8ebff] to-[#dde3ff] py-18 px-6">
                 <div className="max-w-4xl mx-auto">
                     {/* 제목은 중앙 정렬 유지 */}
                     <div className="text-center mb-12">
@@ -34,13 +35,25 @@ export default function Home() {
 
                             {/* 소개 텍스트 영역 */}
                             <div className="flex-2">
-                                <h2 className="text-xl font-semibold text-[#4655C7] text-left space-y-2">
-                                    <div>-. SK하이닉스, 현대로템 출신 취업 전문 컨설턴트</div>
-                                    <div>-. 연 1,000건+ 자소서 첨삭 및 Zoom 비대면 면접 컨설팅</div>
-                                    <div>-. 현재까지 누적 870명+ 최종합격 이력</div>
-                                    <div>-. 숨고, 크몽, 블로그, 당근, 사람인 플랫폼 취업컨설턴트</div>
-                                    <div>-. 유명 취업 컨설팅 기업 &#34;마스터 강사&#34;</div>
-                                    <div>-. Thread 취준생 1만 팔로워 보유</div>
+                                <h2 className="text-2xl font-semibold text-[#1e3a8a] text-left space-y-3">
+                                    <AnimatedText delay={0}>
+                                        <div className="hover:text-[#4655C7] transition-colors duration-300 hover:cursor-default">-. SK하이닉스, 현대로템 출신 취업 전문 컨설턴트</div>
+                                    </AnimatedText>
+                                    <AnimatedText delay={200}>
+                                        <div className="hover:text-[#4655C7] transition-colors duration-300 hover:cursor-default">-. 연 1,000건+ 자소서 첨삭 및 Zoom 비대면 면접 컨설팅</div>
+                                    </AnimatedText>
+                                    <AnimatedText delay={400}>
+                                        <div className="hover:text-[#4655C7] transition-colors duration-300 hover:cursor-default">-. 현재까지 누적 870명+ 최종합격 이력</div>
+                                    </AnimatedText>
+                                    <AnimatedText delay={600}>
+                                        <div className="hover:text-[#4655C7] transition-colors duration-300 hover:cursor-default">-. 숨고, 크몽, 블로그, 당근, 사람인 플랫폼 취업컨설턴트</div>
+                                    </AnimatedText>
+                                    <AnimatedText delay={800}>
+                                        <div className="hover:text-[#4655C7] transition-colors duration-300 hover:cursor-default">-. 유명 취업 컨설팅 기업 &#34;마스터 강사&#34;</div>
+                                    </AnimatedText>
+                                    <AnimatedText delay={1000}>
+                                        <div className="hover:text-[#4655C7] transition-colors duration-300 hover:cursor-default">-. Thread 취준생 1만 팔로워 보유</div>
+                                    </AnimatedText>
                                 </h2>
                             </div>
                         </div>
@@ -60,15 +73,21 @@ export default function Home() {
             {/* 취업, 스펙이 부족해서 떨어지는 걸까요? 섹션 */}
             <section className="bg-[#f0f4fa] py-16 px-6">
                 <div className="max-w-5xl mx-auto">
-                    <h1 className="text-4xl font-bold text-[#4655C7] text-center mb-8">
-                        취업, 스펙이 부족해서 떨어지는 걸까요?
-                    </h1>
-                    <h2 className="text-2xl font-bold text-gray-800 text-center mb-8">
-                        또 자격증, 인턴, 대외활동을 찾아 헤매시나요?
-                    </h2>
-                    <h2 className="text-xl font-semibold text-[#4655C7] text-center mb-8">
-                        채용 담당자는 그보다 <span className="font-bold border-b-2 border-[#4655C7] pb-1">&#39;읽고 싶은 자기소개서&#39;</span>를 찾고 있습니다.
-                    </h2>
+                    <AnimatedText delay={0}>
+                        <h1 className="text-4xl font-bold text-[#4655C7] text-center mb-8">
+                            취업, 스펙이 부족해서 떨어지는 걸까요?
+                        </h1>
+                    </AnimatedText>
+                    <AnimatedText delay={200}>
+                        <h2 className="text-2xl font-bold text-gray-800 text-center mb-8">
+                            또 자격증, 인턴, 대외활동을 찾아 헤매시나요?
+                        </h2>
+                    </AnimatedText>
+                    <AnimatedText delay={400}>
+                        <h2 className="text-xl font-semibold text-[#4655C7] text-center mb-8">
+                            채용 담당자는 그보다 <span className="font-bold border-[#4655C7] pb-1">&#39;읽고 싶은 자기소개서&#39;</span>를 찾고 있습니다.
+                        </h2>
+                    </AnimatedText>
                     <div className="max-w-xl mx-auto">
                         <p className="text-lg font-semibold text-gray-600 mb-8">
                             👉 스펙보다 중요한 건, 전달력입니다. <br/>
@@ -144,15 +163,21 @@ export default function Home() {
             {/* 기업에서 원하는 대화법이 있습니다 섹션 */}
             <section className="bg-gray-50 py-16 px-6">
                 <div className="max-w-5xl mx-auto">
-                    <h1 className="text-4xl font-bold text-[#4655C7] text-center mb-8">
-                        기업에서 원하는 대화법이 있습니다
-                    </h1>
-                    <h2 className="text-2xl md:text-2xl font-bold text-gray-800 mb-6 text-center">
-                        면접에서 번번히 고배를 마시나요?
-                    </h2>
-                    <h3 className="text-lg md:text-xl font-semibold text-[#4655C7] text-center mb-8">
-                        채용담당자가 원하는 소통 방식을 안다면, 손쉽게 풀어나갈 수 있습니다.
-                    </h3>
+                    <AnimatedText delay={0}>
+                        <h1 className="text-4xl font-bold text-[#4655C7] text-center mb-8">
+                            기업에서 원하는 대화법이 있습니다
+                        </h1>
+                    </AnimatedText>
+                    <AnimatedText delay={200}>
+                        <h2 className="text-2xl md:text-2xl font-bold text-gray-800 mb-6 text-center">
+                            면접에서 번번히 고배를 마시나요?
+                        </h2>
+                    </AnimatedText>
+                    <AnimatedText delay={400}>
+                        <h3 className="text-lg md:text-xl font-semibold text-[#4655C7] text-center mb-8">
+                            채용담당자가 원하는 소통 방식을 안다면, 손쉽게 풀어나갈 수 있습니다.
+                        </h3>
+                    </AnimatedText>
                     <div className="max-w-xl mx-auto">
                         <p className="text-lg font-semibold text-gray-600 mb-8">
                             👉 답변이 아닌 대화를 준비하세요. <br/>
