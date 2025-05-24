@@ -2,7 +2,7 @@ import TestimonialSliderWrapper from '../components/HomeTestimonialSliderWrapper
 import Link from 'next/link';
 import HomeCompanySlider from "@/components/HomeCompanySlider";
 
-import { testimonials } from '@/data/testimonials';
+import { testimonialAbstracts } from '@/data/testimonials';
 import { companies } from '@/data/companies';
 
 export default function Home() {
@@ -233,10 +233,10 @@ export default function Home() {
 
                 {/* SEO를 위한 실제 후기 데이터 (스크린 리더와 검색 엔진용) */}
                 <div className="sr-only">
-                    {testimonials.map((item, idx) => (
+                    {testimonialAbstracts.map((item, idx) => (
                         <div key={idx}>
                             <h3>{item.title}</h3>
-                            <p>{item.review}</p>
+                            <p>{item.content}</p>
                             <p>작성자: {item.name}</p>
                             <p>평점: 5/5</p>
                         </div>
@@ -244,7 +244,7 @@ export default function Home() {
                 </div>
 
                 {/* 클라이언트 슬라이더 컴포넌트 */}
-                <TestimonialSliderWrapper testimonials={testimonials} />
+                <TestimonialSliderWrapper testimonials={testimonialAbstracts} />
             </section>
 
             {/* CTA Section */}
