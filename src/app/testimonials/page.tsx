@@ -20,10 +20,10 @@ export default function Testimonials() {
                 <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#4655C7] p-5">
                     실제 이용자들의 생생한 후기
                 </h1>
-                <p className="text-lg text-[#4655C7] mb-6">
+                <h2 className="text-lg text-[#4655C7] mb-6">
                     저는 리뷰 이벤트를 따로 진행하지 않습니다.<br />
                     다른 취업 컨설턴트와는 다르게 결과물에 대한 &#34;진짜 후기&#34;만을 보여드립니다.
-                </p>
+                </h2>
             </section>
 
             {/* Testimonials Section */}

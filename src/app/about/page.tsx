@@ -8,19 +8,19 @@ export default function About() {
                 <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#4655C7] p-5">
                     870명 합격의 비밀, 대기업김과장
                 </h1>
-                <p className="text-lg text-[#4655C7] mb-6">
+                <h2 className="text-lg text-[#4655C7] mb-6">
                     SK하이닉스·현대로템 출신 취업 전문가<br />
                     연간 1,000건 이상 자소서 첨삭 & 비대면 면접 컨설팅<br />
                     숨고/크몽 분야 1위, 합격률 82%의 실력
-                </p>
+                </h2>
             </section>
 
             {/* Profile */}
             <section className="relative bg-gradient-to-br from-[#1a202c] via-[#2d3748] to-[#4a5568] py-12 md:py-20 px-6 overflow-hidden">
                 <div className="max-w-4xl mx-auto relative z-10">
-                    <div className="flex flex-col md:flex-row items-center">
+                    <div className="flex flex-col md:flex-row items-center gap-10">
                         {/* 이미지 */}
-                        <div className="w-full md:flex-1 pr-12 mb-8 md:mb-0">
+                        <div className="w-full md:flex-1 mb-8 md:mb-0">
                             <div className="relative w-64 md:w-96 mx-auto md:mx-0 rounded-2xl overflow-hidden">
                                 <img
                                     src="/img/stand_front.jpg"
@@ -69,14 +69,13 @@ export default function About() {
             {/* Specialized Fields */}
             <section className="bg-white py-16 px-6">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-3xl font-bold text-[#4655C7] text-center mb-12">[KKS 필독!] 스토리텔링 파트</h2>
+                    <h2 className="text-3xl font-bold text-[#4655C7] text-center mb-12">공정 연구원이 취업 컨설턴트가 되기까지</h2>
 
-                    <div className="grid grid-cols-1 gap-8 content-center">
-                        <span>여기에 스토리텔링을 넣어서 신뢰감을 올려주게 만든다. (아래는 예시)</span>
+                    <div className="max-w-2xl mx-auto grid grid-cols-1 content-center">
                         <span>~한 경험을 통해 컨설팅을 시작하게 되었습니다.</span>
                         <span>~라는 가설을 세웠고, ~을 통해 결과를 검증해냈습니다</span>
-                        <span>~한 사람들의 ~부분의 가치를 올리는 방법에 대한 연구를 지속적으로 진행 중입니다.</span>
-                        <span className="font-bold">스토리 텔링 파트 직접 작성 요망</span>
+                        <span>아직 늦지 않았습니다. 당신도 충분히 가능합니다.</span>
+                        <span>- 대기업김과장</span>
                     </div>
                 </div>
             </section>
