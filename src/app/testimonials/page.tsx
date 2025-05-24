@@ -58,9 +58,17 @@ export default function Testimonials() {
                         <div className="text-center">
                             <button
                                 onClick={handleLoadMore}
-                                className="bg-[#4655C7] text-white px-8 py-3 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer"
+                                className="text-[#4655C7] font-bold px-20 py-3 rounded-full text-lg hover:text-[#344199] hover:border-[#344199] transition-all duration-300 hover:cursor-pointer flex items-center gap-2 mx-auto group"
                             >
                                 더 보기
+                                <svg
+                                    className="w-5 h-5 transition-transform duration-300 group-hover:translate-y-1"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    viewBox="0 0 24 24"
+                                >
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                                </svg>
                             </button>
                         </div>
                     )}
@@ -68,9 +76,9 @@ export default function Testimonials() {
             </section>
 
             {/* External Review Links */}
-            <section className="bg-[#f0f4fa] py-16 px-6">
+            <section className="bg-[#f5f6f7] py-16 px-6">
                 <div className="max-w-4xl mx-auto text-center">
-                    <h2 className="text-3xl font-bold text-[#4655C7] mb-4">
+                    <h2 className="text-3xl font-bold text-[#4655C7] mb-6">
                         다른 채널에서 대기업김과장의 최신 후기를 확인해보세요
                     </h2>
                     <p className="text-gray-600 mb-8">
