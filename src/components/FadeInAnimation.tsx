@@ -8,7 +8,7 @@ interface AnimatedTextProps {
     delay?: number;
 }
 
-const AnimatedText = ({ children, className = "", delay = 0 }: AnimatedTextProps) => {
+const FadeInAnimation = ({ children, className = "", delay = 0 }: AnimatedTextProps) => {
     const [isVisible, setIsVisible] = useState(false);
     const [isMounted, setIsMounted] = useState(false);
     const ref = useRef<HTMLDivElement>(null);
@@ -50,8 +50,8 @@ const AnimatedText = ({ children, className = "", delay = 0 }: AnimatedTextProps
             ref={ref}
             className={`transition-all duration-1000 ease-out ${
                 isVisible
-                    ? 'opacity-100 translate-y-0'
-                    : 'opacity-30 translate-y-8'
+                    ? 'opacity-100'
+                    : 'opacity-10'
             } ${className}`}
         >
             {children}
@@ -59,4 +59,4 @@ const AnimatedText = ({ children, className = "", delay = 0 }: AnimatedTextProps
     );
 };
 
-export default AnimatedText;
+export default FadeInAnimation;
