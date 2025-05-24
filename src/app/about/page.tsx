@@ -18,9 +18,9 @@ export default function About() {
             {/* Profile */}
             <section className="relative bg-gradient-to-br from-[#1a202c] via-[#2d3748] to-[#4a5568] py-12 md:py-20 px-6 overflow-hidden">
                 <div className="max-w-4xl mx-auto relative z-10">
-                    <div className="flex flex-col md:flex-row items-center">
+                    <div className="flex flex-col md:flex-row items-center gap-10">
                         {/* 이미지 */}
-                        <div className="w-full md:flex-1 pr-12 mb-8 md:mb-0">
+                        <div className="w-full md:flex-1 mb-8 md:mb-0">
                             <div className="relative w-64 md:w-96 mx-auto md:mx-0 rounded-2xl overflow-hidden">
                                 <img
                                     src="/img/stand_front.jpg"
@@ -69,10 +69,9 @@ export default function About() {
             {/* Specialized Fields */}
             <section className="bg-white py-16 px-6">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-3xl font-bold text-[#4655C7] text-center mb-12">[KKS 필독!] 스토리텔링 파트</h2>
+                    <h2 className="text-3xl font-bold text-[#4655C7] text-center mb-12">공정 연구원이 취업 컨설턴트가 되기까지</h2>
 
-                    <div className="grid grid-cols-1 content-center">
-                        <span>여기에 스토리텔링을 넣어서 신뢰감을 올려주게 만든다. (아래는 예시)</span>
+                    <div className="max-w-2xl mx-auto grid grid-cols-1 content-center">
                         <span>~한 경험을 통해 컨설팅을 시작하게 되었습니다.</span>
                         <span>~라는 가설을 세웠고, ~을 통해 결과를 검증해냈습니다</span>
                         <span>아직 늦지 않았습니다. 당신도 충분히 가능합니다.</span>
