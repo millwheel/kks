@@ -9,19 +9,52 @@ export default function Home() {
     return (
         <main className="bg-white text-gray-900 min-h-screen flex flex-col">
             {/* Hero Section */}
-            <section className="bg-[#f0f2ff] py-20 px-6 text-center">
-                <h1 className="text-5xl font-bold mb-4 text-[#4655C7] p-5">
-                    합격을 부르는 자기소개서 & 면접 컨설팅
-                </h1>
-                <h2 className="text-lg text-[#4655C7] mb-6">
-                    공기업, 대기업 최종 합격자 다수 배출!<br />
-                    실전 중심 맞춤형 피드백으로 당신의 합격을 이끕니다. <br />
-                </h2>
-                <Link href="/contact">
-                    <button className="bg-[#4655C7] text-white px-8 py-4 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
-                        무료 상담 신청하기
-                    </button>
-                </Link>
+            <section className="bg-[#f0f2ff] py-20 px-6">
+                <div className="max-w-4xl mx-auto">
+                    {/* 제목은 중앙 정렬 유지 */}
+                    <div className="text-center mb-12">
+                        <h1 className="text-5xl font-bold mb-4 text-[#4655C7] p-5">
+                            합격을 부르는 자기소개서 & 면접 컨설팅
+                        </h1>
+                    </div>
+
+                    {/* 프로필 사진과 소개 텍스트 - 중앙 정렬 */}
+                    <div className="flex justify-center">
+                        <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
+                            {/* 프로필 사진 영역 */}
+                            <div className="flex-1">
+                                <div className="w-80 h-96 bg-gray-200 rounded-xl flex items-center justify-center">
+                                    <img
+                                        src="/img/desk_front.jpg"
+                                        alt="전문 컨설턴트 프로필 이미지"
+                                        className="object-cover w-full h-full rounded-2xl"
+                                    />
+                                </div>
+                            </div>
+
+                            {/* 소개 텍스트 영역 */}
+                            <div className="flex-2">
+                                <h2 className="text-xl font-semibold text-[#4655C7] text-left space-y-2">
+                                    <div>-. SK하이닉스, 현대로템 출신 취업 전문 컨설턴트</div>
+                                    <div>-. 연 1,000건+ 자소서 첨삭 및 Zoom 비대면 면접 컨설팅</div>
+                                    <div>-. 현재까지 누적 870명+ 최종합격 이력</div>
+                                    <div>-. 숨고, 크몽, 블로그, 당근, 사람인 플랫폼 취업컨설턴트</div>
+                                    <div>-. 유명 취업 컨설팅 기업 &#34;마스터 강사&#34;</div>
+                                    <div>-. Thread 취준생 1만 팔로워 보유</div>
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* CTA 버튼은 중앙 정렬 유지 */}
+                    <div className="text-center mt-3">
+                        <Link href="/contact">
+                            <button className="bg-[#4655C7] text-white px-8 py-4 rounded-full text-lg hover:bg-[#344199] transition hover:cursor-pointer">
+                                무료 상담 신청하기
+                            </button>
+                        </Link>
+                    </div>
+                </div>
             </section>
 
             {/* 취업, 스펙이 부족해서 떨어지는 걸까요? 섹션 */}
@@ -242,11 +275,18 @@ export default function Home() {
                     </div>
 
                     {/* 합격 기업 리스트 섹션 */}
-                    <div className="bg-white rounded-xl shadow-md p-8">
+                    <div className="bg-white rounded-xl shadow-md p-8 mb-12">
                         <h3 className="text-3xl font-bold text-[#4655C7] text-center mb-8">
                             이용자 실제 합격 기업 현황
                         </h3>
                         <HomeCompanySlider companies={companies} />
+
+                    </div>
+
+                    <div className="bg-white rounded-xl shadow-md p-8">
+                        <h3 className="text-3xl font-bold text-[#4655C7] text-center mb-8">
+                            이용자 실제 합격 직무 현황
+                        </h3>
 
                     </div>
                 </div>
