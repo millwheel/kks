@@ -215,10 +215,10 @@ export default function Home() {
 
                     <div className="text-center mb-12">
                         <div className="space-y-3 text-gray-700">
-                            <p className="text-base md:text-lg">
+                            <p className="text-xl">
                                 <span className="font-semibold text-[#4655C7]">870명 이상의 합격자, 150개 이상의 기업.</span> 데이터가 증명합니다.
                             </p>
-                            <p className="text-xl md:text-lg font-semibold text-gray-800">
+                            <p className="text-2xl font-bold text-gray-800">
                                 당신도 다음 성공 사례가 될 수 있습니다.
                             </p>
                         </div>
