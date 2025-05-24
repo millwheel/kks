@@ -2,7 +2,7 @@ import TestimonialSliderWrapper from '../components/HomeTestimonialSliderWrapper
 import Link from 'next/link';
 import HomeCompanySlider from "@/components/HomeCompanySlider";
 
-import { testimonialAbstracts } from '@/data/testimonials';
+import { testimonialAbstracts } from '@/data/testimonialAbstract';
 import { companies } from '@/data/companies';
 
 export default function Home() {

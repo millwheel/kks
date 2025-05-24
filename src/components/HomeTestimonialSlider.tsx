@@ -2,7 +2,7 @@
 
 
 import { useState, useEffect } from 'react';
-import {TestimonialAbstract} from "@/data/testimonials";
+import {TestimonialAbstract} from "@/data/testimonialAbstract";
 
 export default function TestimonialSlider({ testimonials }: { testimonials: TestimonialAbstract[] }) {
     // 현재 슬라이드 상태 관리
