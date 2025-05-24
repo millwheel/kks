@@ -38,22 +38,22 @@ export default function Home() {
                             <div className="flex-2">
                                 <h2 className="text-2xl font-semibold text-[#1e3a8a] text-left space-y-3">
                                     <AnimatedText delay={0}>
-                                        <div className="hover:text-[#4655C7] transition-colors duration-300 hover:cursor-default">-. SK하이닉스, 현대로템 출신 취업 전문 컨설턴트</div>
+                                        <div className="hover:text-[#e1582e] transition-colors duration-300 hover:cursor-default">-. SK하이닉스, 현대로템 출신 취업 전문 컨설턴트</div>
                                     </AnimatedText>
                                     <AnimatedText delay={200}>
-                                        <div className="hover:text-[#4655C7] transition-colors duration-300 hover:cursor-default">-. 연 1,000건+ 자소서 첨삭 및 Zoom 비대면 면접 컨설팅</div>
+                                        <div className="hover:text-[#e1582e] transition-colors duration-300 hover:cursor-default">-. 연 1,000건+ 자소서 첨삭 및 Zoom 비대면 면접 컨설팅</div>
                                     </AnimatedText>
                                     <AnimatedText delay={400}>
-                                        <div className="hover:text-[#4655C7] transition-colors duration-300 hover:cursor-default">-. 현재까지 누적 870명+ 최종합격 이력</div>
+                                        <div className="hover:text-[#e1582e] transition-colors duration-300 hover:cursor-default">-. 현재까지 누적 870명+ 최종합격 이력</div>
                                     </AnimatedText>
                                     <AnimatedText delay={600}>
-                                        <div className="hover:text-[#4655C7] transition-colors duration-300 hover:cursor-default">-. 숨고, 크몽, 블로그, 당근, 사람인 플랫폼 취업컨설턴트</div>
+                                        <div className="hover:text-[#e1582e] transition-colors duration-300 hover:cursor-default">-. 숨고, 크몽, 블로그, 당근, 사람인 플랫폼 취업컨설턴트</div>
                                     </AnimatedText>
                                     <AnimatedText delay={800}>
-                                        <div className="hover:text-[#4655C7] transition-colors duration-300 hover:cursor-default">-. 유명 취업 컨설팅 기업 &#34;마스터 강사&#34;</div>
+                                        <div className="hover:text-[#e1582e] transition-colors duration-300 hover:cursor-default">-. 유명 취업 컨설팅 기업 &#34;마스터 강사&#34;</div>
                                     </AnimatedText>
                                     <AnimatedText delay={1000}>
-                                        <div className="hover:text-[#4655C7] transition-colors duration-300 hover:cursor-default">-. Thread 취준생 1만 팔로워 보유</div>
+                                        <div className="hover:text-[#e1582e] transition-colors duration-300 hover:cursor-default">-. Thread 취준생 1만 팔로워 보유</div>
                                     </AnimatedText>
                                 </h2>
                             </div>
