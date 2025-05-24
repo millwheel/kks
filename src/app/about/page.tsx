@@ -71,12 +71,12 @@ export default function About() {
                 <div className="max-w-5xl mx-auto">
                     <h2 className="text-3xl font-bold text-[#4655C7] text-center mb-12">[KKS 필독!] 스토리텔링 파트</h2>
 
-                    <div className="grid grid-cols-1 gap-8 content-center">
+                    <div className="grid grid-cols-1 content-center">
                         <span>여기에 스토리텔링을 넣어서 신뢰감을 올려주게 만든다. (아래는 예시)</span>
                         <span>~한 경험을 통해 컨설팅을 시작하게 되었습니다.</span>
                         <span>~라는 가설을 세웠고, ~을 통해 결과를 검증해냈습니다</span>
-                        <span>~한 사람들의 ~부분의 가치를 올리는 방법에 대한 연구를 지속적으로 진행 중입니다.</span>
-                        <span className="font-bold">스토리 텔링 파트 직접 작성 요망</span>
+                        <span>아직 늦지 않았습니다. 당신도 충분히 가능합니다.</span>
+                        <span>- 대기업김과장</span>
                     </div>
                 </div>
             </section>

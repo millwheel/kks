@@ -25,7 +25,7 @@ export default function Home() {
             </section>
 
             {/* 취업, 스펙이 부족해서 떨어지는 걸까요? 섹션 */}
-            <section className="bg-[#f7f9ff] py-16 px-6">
+            <section className="bg-[#f0f4fa] py-16 px-6">
                 <div className="max-w-5xl mx-auto">
                     <h1 className="text-4xl font-bold text-[#4655C7] text-center mb-8">
                         취업, 스펙이 부족해서 떨어지는 걸까요?
@@ -43,38 +43,73 @@ export default function Home() {
                         </p>
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        {/* 실패 사례 */}
-                        <div className="bg-white p-6 rounded-xl shadow-md border-t-4 border-gray-400">
-                            <h4 className="font-bold mb-4 text-gray-600 text-lg">지원자 A (불합격)</h4>
-                            <p className="text-gray-700 mb-4">
-                                &#34;저는 관련 자격증도 있고, 학점도 높고, 인턴 경험도 있는데 왜 계속 떨어지는지 모르겠어요. 더 이상 보완할 스펙이 없는데...&#34;
-                            </p>
-                            <div className="bg-gray-100 p-3 rounded-lg">
-                                <p className="text-sm text-gray-600 italic">
-                                    스펙은 좋지만, 그것을 자기소개서에서 효과적으로 표현하지 못하면 합격으로 이어지지 않습니다.
-                                </p>
-                            </div>
-                        </div>
+                    <div className="max-w-2xl mx-auto">
+                        <div className="grid grid-cols-1 md:grid-cols-1 gap-16">
+                            {/* 실패 사례 */}
+                            <div className="space-y-8 bg-white p-8 rounded-2xl shadow-xs">
+                                <h4 className="font-bold text-center text-gray-600 text-xl mb-8 pb-4 border-b border-gray-200">불합격 사례</h4>
 
-                        {/* 합격 사례 */}
-                        <div className="bg-white p-6 rounded-xl shadow-md border-t-4 border-[#4655C7]">
-                            <h4 className="font-bold mb-4 text-[#4655C7] text-lg">지원자 B (최종합격)</h4>
-                            <p className="text-gray-700 mb-4">
-                                &#34;전공과 무관한 분야였고, 특별한 인턴 경험도 없었지만 제가 가진 경험을 회사가 원하는 방향으로 표현하는 데 집중했더니 합격했어요!&#34;
-                            </p>
-                            <div className="bg-[#f0f2ff] p-3 rounded-lg">
-                                <p className="text-sm text-[#4655C7] italic">
-                                    같은 경험도 어떻게 표현하느냐에 따라 인사담당자의 눈에 완전히 다르게 보입니다.
-                                </p>
+                                {/* 지원자 말풍선 (왼쪽) */}
+                                <div className="flex justify-start">
+                                    <div className="max-w-sm">
+                                        <p className="text-sm font-semibold text-gray-700 mb-2">지원자</p>
+                                        <div className="bg-gray-100 p-4 rounded-2xl rounded-tl-none shadow-md border border-gray-200">
+                                            <p className="text-gray-700">
+                                                &#34;저는 관련 자격증도 있고, 학점도 높고, 인턴 경험도 있는데 왜 계속 떨어지는지 모르겠어요. 더 이상 보완할 스펙이 없는데...&#34;
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* 컨설턴트 말풍선 (오른쪽) */}
+                                <div className="flex justify-end">
+                                    <div className="max-w-sm">
+                                        <p className="text-sm font-semibold text-[#4655C7] mb-2 text-right">컨설턴트</p>
+                                        <div className="bg-[#4655C7] p-4 rounded-2xl rounded-tr-none shadow-md">
+                                            <p className="text-white">
+                                                스펙을 아무리 쌓아도 그것을 자기소개서에서 효과적으로 표현하지 못하면 합격으로 이어지지 않습니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* 합격 사례 */}
+                            <div className="space-y-8 bg-white p-8 rounded-2xl shadow-xs">
+                                <h4 className="font-bold text-center text-[#4655C7] text-xl mb-8 pb-4 border-b border-blue-200">합격 사례</h4>
+
+                                {/* 지원자 말풍선 (왼쪽) */}
+                                <div className="flex justify-start">
+                                    <div className="max-w-sm">
+                                        <p className="text-sm font-semibold text-gray-700 mb-2">지원자</p>
+                                        <div className="bg-blue-50 p-4 rounded-2xl rounded-tl-none shadow-md border border-blue-200">
+                                            <p className="text-gray-700">
+                                                &#34;전공과 무관한 분야였고, 특별한 인턴 경험도 없었지만 제가 가진 경험을 회사가 원하는 방향으로 표현하는 데 집중했더니 합격했어요!&#34;
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* 컨설턴트 말풍선 (오른쪽) */}
+                                <div className="flex justify-end">
+                                    <div className="max-w-sm">
+                                        <p className="text-sm font-semibold text-[#4655C7] mb-2 text-right">컨설턴트</p>
+                                        <div className="bg-[#4655C7] p-4 rounded-2xl rounded-tr-none shadow-md">
+                                            <p className="text-white">
+                                                같은 경험도 어떻게 표현하느냐에 따라 인사담당자의 눈에 완전히 다르게 보입니다.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </section>
 
             {/* 기업에서 원하는 대화법이 있습니다 섹션 */}
-            <section className="bg-white py-16 px-6">
+            <section className="bg-gray-50 py-16 px-6">
                 <div className="max-w-5xl mx-auto">
                     <h1 className="text-4xl font-bold text-[#4655C7] text-center mb-8">
                         기업에서 원하는 대화법이 있습니다
@@ -93,49 +128,78 @@ export default function Home() {
                     </div>
 
                     {/* 면접 실패 vs 성공 예시 대화 */}
-                    <div className="mb-12">
-                        <h3 className="text-xl font-bold text-gray-800 mb-6 text-center">
-                            면접 실패 vs 성공 대화 예시
-                        </h3>
-
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div className="max-w-2xl mx-auto">
+                        <div className="grid grid-cols-1 md:grid-cols-1 gap-16">
                             {/* 실패 대화 */}
-                            <div className="bg-white p-6 rounded-xl shadow-md border-t-4 border-gray-400">
-                                <h4 className="font-bold mb-4 text-gray-600 text-lg">실패하는 대화</h4>
-                                <div className="space-y-4">
-                                    <div className="bg-gray-100 p-3 rounded-lg">
-                                        <p className="text-sm font-semibold text-gray-700">면접관</p>
-                                        <p className="text-sm text-gray-600">&#34;지원자님의 강점이 무엇인가요?&#34;</p>
+                            <div className="space-y-8 bg-white p-8 rounded-2xl shadow-xs">
+                                <h4 className="font-bold text-center text-gray-600 text-xl mb-8 pb-4 border-b border-gray-200">실패하는 대화</h4>
+
+                                {/* 면접관 질문 (오른쪽) */}
+                                <div className="flex justify-end">
+                                    <div className="max-w-sm">
+                                        <p className="text-sm font-semibold text-gray-700 mb-2 text-right">면접관</p>
+                                        <div className="bg-gray-100 p-4 rounded-2xl rounded-tr-none shadow-md border border-gray-200">
+                                            <p className="text-gray-700">&#34;지원자님의 강점이 무엇인가요?&#34;</p>
+                                        </div>
                                     </div>
-                                    <div className="bg-gray-50 p-3 rounded-lg">
-                                        <p className="text-sm font-semibold text-gray-700">지원자</p>
-                                        <p className="text-sm text-gray-600">&#34;저는 성실하고 책임감이 강합니다. 맡은 일은 끝까지 해내는 성격입니다.&#34;</p>
+                                </div>
+
+                                {/* 지원자 답변 (왼쪽) */}
+                                <div className="flex justify-start">
+                                    <div className="max-w-sm">
+                                        <p className="text-sm font-semibold text-gray-700 mb-2">지원자</p>
+                                        <div className="bg-gray-100 p-4 rounded-2xl rounded-tl-none shadow-md border border-gray-200">
+                                            <p className="text-gray-700">&#34;저는 성실하고 책임감이 강합니다. 맡은 일은 끝까지 해내는 성격입니다.&#34;</p>
+                                        </div>
                                     </div>
-                                    <div className="bg-gray-100 p-3 rounded-lg">
-                                        <p className="text-sm font-semibold text-gray-700">면접관 (속마음)</p>
-                                        <p className="text-sm text-gray-600 italic">&#34;모든 지원자가 하는 말이네... 구체적인 사례가 없어 신뢰하기 어렵다.&#34;</p>
+                                </div>
+
+                                {/* 면접관 속마음 (오른쪽) */}
+                                <div className="flex justify-end">
+                                    <div className="max-w-sm">
+                                        <p className="text-sm font-semibold text-gray-700 mb-2 text-right">면접관 (속마음)</p>
+                                        <div className="bg-red-50 p-4 rounded-2xl rounded-tr-none shadow-md border border-red-200">
+                                            <p className="text-red-700 italic">&#39;모든 지원자가 하는 말이네... 구체적인 사례가 없어 신뢰하기 어렵다.&#39;</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
 
                             {/* 성공 대화 */}
-                            <div className="bg-white p-6 rounded-xl shadow-md border-t-4 border-[#4655C7]">
-                                <h4 className="font-bold mb-4 text-[#4655C7] text-lg">성공하는 대화</h4>
-                                <div className="space-y-4">
-                                    <div className="bg-[#f0f2ff] p-3 rounded-lg">
-                                        <p className="text-sm font-semibold text-gray-700">면접관</p>
-                                        <p className="text-sm text-gray-600">&#34;지원자님의 강점이 무엇인가요?&#34;</p>
+                            <div className="space-y-8 bg-white p-8 rounded-2xl shadow-xs">
+                                <h4 className="font-bold text-center text-[#4655C7] text-xl mb-8 pb-4 border-b border-blue-200">성공하는 대화</h4>
+
+                                {/* 면접관 질문 (오른쪽) */}
+                                <div className="flex justify-end">
+                                    <div className="max-w-sm">
+                                        <p className="text-sm font-semibold text-gray-700 mb-2 text-right">면접관</p>
+                                        <div className="bg-gray-100 p-4 rounded-2xl rounded-tr-none shadow-md border border-gray-200">
+                                            <p className="text-gray-700">&#34;지원자님의 강점이 무엇인가요?&#34;</p>
+                                        </div>
                                     </div>
-                                    <div className="bg-[#f7f9ff] p-3 rounded-lg">
-                                        <p className="text-sm font-semibold text-gray-700">지원자</p>
-                                        <p className="text-sm text-gray-600">&#34;저는 목표 달성을 위한 체계적인 실행력이 강점입니다. 학부 연구 프로젝트에서 예상치 못한 문제가 발생했을 때 (중략) ~를 통해 원인을 세분화하고 팀원들과 협업하여 (중략) ~한 전략을 통해 일정 내에 문제를 해결했습니다. 이러한 경험이 귀사의 R&D 프로젝트에도 도움이 될 것이라 생각합니다.&#34;</p>
+                                </div>
+
+                                {/* 지원자 답변 (왼쪽) */}
+                                <div className="flex justify-start">
+                                    <div className="max-w-lg">
+                                        <p className="text-sm font-semibold text-gray-700 mb-2">지원자</p>
+                                        <div className="bg-blue-50 p-4 rounded-2xl rounded-tl-none shadow-md border border-blue-200">
+                                            <p className="text-gray-700">&#34;저는 목표 달성을 위한 체계적인 실행력이 강점입니다. 학부 연구 프로젝트에서 예상치 못한 문제가 발생했을 때 (중략) ~를 통해 원인을 세분화하고 팀원들과 협업하여 (중략) ~한 전략을 통해 일정 내에 문제를 해결했습니다. 이러한 경험이 귀사의 R&D 프로젝트에도 도움이 될 것이라 생각합니다.&#34;</p>
+                                        </div>
                                     </div>
-                                    <div className="bg-[#f0f2ff] p-3 rounded-lg">
-                                        <p className="text-sm font-semibold text-gray-700">면접관 (속마음)</p>
-                                        <p className="text-sm text-[#4655C7] italic">&#34;구체적인 사례와 우리 회사와의 연관성까지 언급했네. 준비가 잘 되어 있군.&#34;</p>
+                                </div>
+
+                                {/* 면접관 속마음 (오른쪽) */}
+                                <div className="flex justify-end">
+                                    <div className="max-w-sm">
+                                        <p className="text-sm font-semibold text-gray-700 mb-2 text-right">면접관 (속마음)</p>
+                                        <div className="bg-green-50 p-4 rounded-2xl rounded-tr-none shadow-md border border-green-200">
+                                            <p className="text-green-700 italic">&#39;구체적인 사례와 우리 회사와의 연관성까지 언급했네. 준비가 잘 되어 있군.&#39;</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
+
                         </div>
                     </div>
 
@@ -154,7 +218,7 @@ export default function Home() {
                             <p className="text-base md:text-lg">
                                 <span className="font-semibold text-[#4655C7]">870명 이상의 합격자, 150개 이상의 기업.</span> 데이터가 증명합니다.
                             </p>
-                            <p className="text-base md:text-lg font-semibold text-gray-800">
+                            <p className="text-xl md:text-lg font-semibold text-gray-800">
                                 당신도 다음 성공 사례가 될 수 있습니다.
                             </p>
                         </div>
