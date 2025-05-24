@@ -30,25 +30,17 @@ export default function Home() {
                     <h1 className="text-4xl font-bold text-[#4655C7] text-center mb-8">
                         취업, 스펙이 부족해서 떨어지는 걸까요?
                     </h1>
-                    <h2 className="text-xl md:text-2xl font-bold text-gray-800 mb-6 text-center">
+                    <h2 className="text-2xl font-bold text-gray-800 text-center mb-8">
                         또 자격증, 인턴, 대외활동을 찾아 헤매시나요?
                     </h2>
-                    <h3 className="text-lg md:text-xl font-semibold text-[#4655C7] text-center mb-8">
+                    <h2 className="text-xl font-semibold text-[#4655C7] text-center mb-8">
                         채용 담당자는 그보다 <span className="font-bold border-b-2 border-[#4655C7] pb-1">&#39;읽고 싶은 자기소개서&#39;</span>를 찾고 있습니다.
-                    </h3>
-
-                    <div className="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-md mb-10">
-                        <div className="space-y-5 mb-8">
-                            {[
-                                "스펙보다 중요한 건, 전달력입니다.",
-                                "비슷한 배경, 비슷한 경험 속에서도 합격자를 만드는 건 결국 '표현의 차이'입니다.",
-                            ].map((text, i) => (
-                                <div key={i} className="flex items-start gap-3">
-
-                                    <p className="text-gray-700">{text}</p>
-                                </div>
-                            ))}
-                        </div>
+                    </h2>
+                    <div className="max-w-xl mx-auto">
+                        <p className="text-lg font-semibold text-gray-600 mb-8">
+                            👉 스펙보다 중요한 건, 전달력입니다. <br/>
+                            👉 비슷한 배경, 경험 속에서도 결국 &#39;표현의 차이&#39;가 합불을 결정합니다.
+                        </p>
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -84,30 +76,20 @@ export default function Home() {
             {/* 기업에서 원하는 대화법이 있습니다 섹션 */}
             <section className="bg-white py-16 px-6">
                 <div className="max-w-5xl mx-auto">
-                    <h2 className="text-4xl font-bold text-[#4655C7] text-center mb-8">
+                    <h1 className="text-4xl font-bold text-[#4655C7] text-center mb-8">
                         기업에서 원하는 대화법이 있습니다
+                    </h1>
+                    <h2 className="text-2xl md:text-2xl font-bold text-gray-800 mb-6 text-center">
+                        면접에서 번번히 고배를 마시나요?
                     </h2>
-
-                    <div className="bg-[#f0f2ff] p-8 rounded-xl shadow-md mb-10">
-                        <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-6 text-center">
-                            면접에서 어떤 말이 합격을 이끌어낼까요?
-                        </h3>
-                        <p className="text-lg md:text-xl font-semibold text-[#4655C7] text-center mb-8">
-                            <span className="font-bold border-b-2 border-[#4655C7] pb-1">&#39;방법&#39;</span>을 알려드립니다.
+                    <h3 className="text-lg md:text-xl font-semibold text-[#4655C7] text-center mb-8">
+                        채용담당자가 원하는 소통 방식을 안다면, 손쉽게 풀어나갈 수 있습니다.
+                    </h3>
+                    <div className="max-w-xl mx-auto">
+                        <p className="text-lg font-semibold text-gray-600 mb-8">
+                            👉 답변이 아닌 대화를 준비하세요. <br/>
+                            👉 솔직한 경험을 토대로 대답해도 충분히 면접관의 이목을 끌 수 있는 방법이 있습니다.
                         </p>
-
-                        <div className="space-y-5 mb-8">
-                            {[
-                                "취준생들은 기업에서 원하는 소통 방식을 잘 모릅니다.",
-                                "답변이 아닌 대화를 준비하세요.",
-                                "1분 자기소개부터 마무리 멘트까지, 실제 면접관의 기준으로 도와드립니다."
-                            ].map((text, i) => (
-                                <div key={i} className="flex items-start gap-3">
-                                    <span className="text-[#4655C7] font-bold mt-1">✦</span>
-                                    <p className="text-gray-700">{text}</p>
-                                </div>
-                            ))}
-                        </div>
                     </div>
 
                     {/* 면접 실패 vs 성공 예시 대화 */}
@@ -157,25 +139,6 @@ export default function Home() {
                         </div>
                     </div>
 
-                    {/* 예상 질문 리스트 */}
-                    <div className="bg-white p-6 rounded-xl shadow-md mb-8">
-                        <h3 className="text-xl font-bold text-[#4655C7] mb-6">
-                            이런 질문, 준비해보셨나요?
-                        </h3>
-                        <div className="grid grid-cols-1 gap-4 mb-6">
-                            {[
-                                "귀하의 경험 중에서 가장 도전적이었던 문제는 무엇이었으며, 어떻게 해결했습니까?",
-                                "지원한 직무에서 성공하기 위해 필요한 역량은 무엇이라고 생각하나요?",
-                                "우리 회사의 어떤 점이 지원자님과 맞는다고 생각하시나요?",
-                                "이전 업무/프로젝트에서 실패한 경험과 그로부터 배운 점은 무엇인가요?"
-                            ].map((question, i) => (
-                                <div key={i} className="flex items-start gap-2">
-                                    <span className="text-[#4655C7] font-bold">Q.</span>
-                                    <p className="text-gray-700 text-sm">{question}</p>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
                 </div>
             </section>
 
