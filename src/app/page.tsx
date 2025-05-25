@@ -318,7 +318,7 @@ export default function Home() {
                         <h3 className="text-3xl font-bold text-[#4655C7] text-center mb-8">
                             이용자 실제 합격 기업 현황
                         </h3>
-                        <HomeCompanySlider companies={companies} />
+                        <HomeCompanySlider rowCount={4} items={companies}/>
 
                     </div>
 
@@ -326,7 +326,7 @@ export default function Home() {
                         <h3 className="text-3xl font-bold text-[#4655C7] text-center mb-8">
                             이용자 실제 합격 직무 현황
                         </h3>
-                        <HomeJobSlider jobs={jobs}/>
+                        <HomeJobSlider rowCount={2} items={jobs} />
                     </div>
                 </div>
             </section>
