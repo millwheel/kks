@@ -1,9 +1,11 @@
 import TestimonialSliderWrapper from '../components/HomeTestimonialSliderWrapper';
 import Link from 'next/link';
 import HomeCompanySlider from "@/components/HomeCompanySlider";
+import HomeJobSlider from "@/components/HomeJobSlider";
 
 import { testimonialAbstracts } from '@/data/testimonialAbstract';
 import { companies } from '@/data/companies';
+import { jobs } from '@/data/jobs';
 import FadeInAnimation from "@/components/FadeInAnimation";
 import BubblePopAnimation from "@/components/BubblePopAnimation";
 
@@ -324,7 +326,7 @@ export default function Home() {
                         <h3 className="text-3xl font-bold text-[#4655C7] text-center mb-8">
                             이용자 실제 합격 직무 현황
                         </h3>
-
+                        <HomeJobSlider jobs={jobs}/>
                     </div>
                 </div>
             </section>
