@@ -9,7 +9,7 @@ export default function Services() {
                 <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#4655C7] p-5">
                     기업이 원하는 언어로 바꿔드립니다
                 </h1>
-                <h2 className="text-lg text-[#4655C7] mb-6">
+                <h2 className="text-xl text-[#4655C7] mb-6">
                     대기업 출신이 직접 첨삭하는 1:1 맞춤 피드백<br />
                     합격을 위한 최고의 선택
                 </h2>

@@ -5,7 +5,7 @@ import SlidingRow, {createRows, RowProps} from "@/components/SidingRow";
 
 export default function HomeCompanySlider({ items, rowCount }: RowProps) {
     const [rows] = useState(() => createRows(rowCount, items));
-    const speeds = [89, 92, 98, 95];
+    const speeds = [57, 64, 62, 59];
 
     return (
         <div className="space-y-4">
