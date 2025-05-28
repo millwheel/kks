@@ -181,7 +181,7 @@ export default function Home() {
                     </h3>
                     <div className="max-w-xl mx-auto">
                         <p className="text-lg font-semibold text-gray-600 mb-8">
-                            👉 답변이 아닌 대화를 준비하세요. <br/>
+                            👉 정해놓은 답변이 아닌 상호작용이 있는 대화를 준비하세요. <br/>
                             👉 솔직한 경험을 토대로 대답해도 충분히 면접관의 이목을 끌 수 있는 방법이 있습니다.
                         </p>
                     </div>
