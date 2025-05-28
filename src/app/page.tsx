@@ -79,10 +79,10 @@ export default function Home() {
                     <h1 className="text-4xl font-bold text-[#4655C7] text-center mb-8">
                         취업, 스펙이 부족해서 떨어지는 걸까요?
                     </h1>
-                    <h2 className="text-2xl font-bold text-gray-800 text-center mb-8">
+                    <h2 className="text-2xl font-semibold text-gray-800 text-center">
                         또 자격증, 인턴, 대외활동을 찾아 헤매시나요?
                     </h2>
-                    <h2 className="text-xl font-semibold text-[#4655C7] text-center mb-8">
+                    <h2 className="text-2xl font-semibold text-[#4655C7] text-center mb-8">
                         채용 담당자는 그보다 <span className="font-bold border-[#4655C7] pb-1">&#39;읽고 싶은 자기소개서&#39;</span>를 찾고 있습니다.
                     </h2>
                     <div className="max-w-xl mx-auto">
@@ -173,12 +173,12 @@ export default function Home() {
                     <h1 className="text-4xl font-bold text-[#4655C7] text-center mb-8">
                         기업에서 원하는 대화법이 있습니다
                     </h1>
-                    <h2 className="text-2xl md:text-2xl font-bold text-gray-800 mb-6 text-center">
+                    <h2 className="text-2xl font-semibold text-gray-800 text-center">
                         면접에서 번번히 고배를 마시나요?
                     </h2>
-                    <h3 className="text-lg md:text-xl font-semibold text-[#4655C7] text-center mb-8">
-                        채용담당자가 원하는 소통 방식을 안다면, 손쉽게 풀어나갈 수 있습니다.
-                    </h3>
+                    <h2 className="text-2xl font-semibold text-[#4655C7] text-center mb-8">
+                        채용담당자가 원하는 <span className="font-bold border-[#4655C7] pb-1">&#39;소통 방식&#39;</span>을 안다면, 손쉽게 풀어나갈 수 있습니다.
+                    </h2>
                     <div className="max-w-xl mx-auto">
                         <p className="text-lg font-semibold text-gray-600 mb-8">
                             👉 정해놓은 답변이 아닌 상호작용이 있는 대화를 준비하세요. <br/>
@@ -281,20 +281,16 @@ export default function Home() {
             {/* 채용 혹한기에도 압도적인 성과 섹션 */}
             <section className="bg-[#f0f4fa] py-16 px-6">
                 <div className="max-w-6xl mx-auto">
-                    <h2 className="text-4xl font-bold text-[#4655C7] text-center mb-6">
+                    <h1 className="text-4xl font-bold text-[#4655C7] text-center mb-6">
                         채용 혹한기에도 압도적인 성과를 내고 있습니다
-                    </h2>
+                    </h1>
 
-                    <div className="text-center mb-12">
-                        <div className="space-y-3 text-gray-700">
-                            <p className="text-xl">
-                                <span className="font-semibold text-[#4655C7]">870명 이상의 합격자, 150개 이상의 기업.</span> 데이터가 증명합니다.
-                            </p>
-                            <p className="text-2xl font-bold text-gray-800">
-                                당신도 다음 성공 사례가 될 수 있습니다.
-                            </p>
-                        </div>
-                    </div>
+                    <h2 className="text-2xl font-semibold text-gray-800 text-center">
+                        <span className="font-semibold text-[#4655C7]">870명 이상의 합격자, 150개 이상의 기업.</span> 데이터가 증명합니다.
+                    </h2>
+                    <h2 className="text-2xl font-semibold text-gray-800 text-center mb-8">
+                        당신도 다음 성공 사례가 될 수 있습니다.
+                    </h2>
 
                     {/* 숫자 강조 배너 */}
                     <div className="max-w-5xl mx-auto">
