@@ -135,7 +135,7 @@ export default function Services() {
                                     </div>
                                     <div className="flex items-start gap-3">
                                         <span className="text-[#4655C7] mt-1">•</span>
-                                        <span className="text-gray-700">면접관에게 &#39;전달되는 임팩트&#39;이 있다</span>
+                                        <span className="text-gray-700">면접관에게 &#39;전달되는 임팩트&#39;가 있다</span>
                                     </div>
                                     <div className="flex items-start gap-3">
                                         <span className="text-[#4655C7] mt-1">•</span>
