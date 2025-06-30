@@ -6,7 +6,7 @@ export default function About() {
             {/* Hero Section */}
             <section className="bg-[#f0f2ff] py-20 px-6 text-center">
                 <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#4655C7] p-5">
-                    870명 합격의 비밀, 대기업김과장
+                    990명 합격의 비밀, 대기업김과장
                 </h1>
                 <h2 className="text-lg text-[#4655C7] mb-6">
                     SK하이닉스·현대로템 출신 취업 전문가<br />
@@ -87,7 +87,7 @@ export default function About() {
 
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
                         {[
-                            { count: "870명+", label: "누적 합격자 수" },
+                            { count: "990명+", label: "누적 합격자 수" },
                             { count: "1,000건+", label: "연간 첨삭/컨설팅 건수" },
                             { count: "82%", label: "평균 자소서 합격률" },
                             { count: "150곳+", label: "최종 합격 기업" }

@@ -51,7 +51,7 @@ export default function Home() {
                                     </FadeInAnimation>
                                     <FadeInAnimation delay={400}>
                                         <div className="hover:text-[#e1582e] transition-colors duration-300 hover:cursor-default">
-                                            -. 현재까지 누적 870명+ 최종합격 이력
+                                            -. 현재까지 누적 990명+ 최종합격 이력
                                         </div>
                                     </FadeInAnimation>
                                     <FadeInAnimation delay={600}>
@@ -298,7 +298,7 @@ export default function Home() {
                     </h1>
 
                     <h2 className="text-2xl font-semibold text-gray-800 text-center">
-                        <span className="font-semibold text-[#4655C7]">870명 이상의 합격자, 150개 이상의 기업.</span> 데이터가 증명합니다.
+                        <span className="font-semibold text-[#4655C7]">990명 이상의 합격자, 150개 이상의 기업.</span> 데이터가 증명합니다.
                     </h2>
                     <h2 className="text-2xl font-semibold text-gray-800 text-center mb-8">
                         당신도 다음 성공 사례가 될 수 있습니다.
@@ -308,7 +308,7 @@ export default function Home() {
                     <div className="max-w-5xl mx-auto">
                         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-12">
                             {[
-                                { count: "870명+", label: "누적 합격자 수" },
+                                { count: "990명+", label: "누적 합격자 수" },
                                 { count: "1,000건+", label: "연간 첨삭/컨설팅 건수" },
                                 { count: "82%", label: "평균 자소서 합격률" },
                                 { count: "150곳+", label: "최종 합격 기업" }
