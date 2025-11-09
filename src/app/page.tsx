@@ -69,11 +69,6 @@ export default function Home() {
                       -. Thread 취준생 3만 팔로워 보유
                     </div>
                   </FadeInAnimation>
-                    <FadeInAnimation delay={1000}>
-                        <div className="hover:text-[#e1582e] transition-colors duration-300 hover:cursor-default">
-                            -. 자기소개서 & 면접 실시간 Zoom 강의 (매달 1회 진행)
-                        </div>
-                    </FadeInAnimation>
                 </h2>
               </div>
             </div>
