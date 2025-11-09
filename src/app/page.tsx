@@ -66,7 +66,7 @@ export default function Home() {
                   </FadeInAnimation>
                   <FadeInAnimation delay={1000}>
                     <div className="hover:text-[#e1582e] transition-colors duration-300 hover:cursor-default">
-                      -. Thread 취준생 2만 팔로워 보유
+                      -. Thread 취준생 3만 팔로워 보유
                     </div>
                   </FadeInAnimation>
                 </h2>
