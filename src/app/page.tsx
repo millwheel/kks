@@ -18,7 +18,7 @@ export default function Home() {
           {/* 제목은 중앙 정렬 유지 */}
           <div className="text-center mb-12">
             <h1 className="text-5xl font-bold mb-4 text-[#4655C7] p-5">
-              합격을 부르는 자기소개서 & 면접 컨설팅
+              대기업 김과장의 합격하는 자소서 | 김기성
             </h1>
           </div>
 
