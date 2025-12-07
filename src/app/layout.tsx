@@ -24,6 +24,9 @@ export const metadata: Metadata = {
         url: 'https://kks-amber.vercel.app',
         type: 'website',
     },
+    other: {
+        "naver-site-verification": "6a16f035bb89c906622be857cb49251aac8c2525",
+    },
 };
 
 export default function RootLayout({
@@ -33,12 +36,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-        <head>
-            <meta
-                name="naver-site-verification"
-                content="6a16f035bb89c906622be857cb49251aac8c2525"
-            />
-        </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
