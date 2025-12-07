@@ -24,9 +24,6 @@ export const metadata: Metadata = {
         url: 'https://kks-amber.vercel.app',
         type: 'website',
     },
-    other: {
-        "naver-site-verification": "6a16f035bb89c906622be857cb49251aac8c2525",
-    },
 };
 
 export default function RootLayout({
