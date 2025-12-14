@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     openGraph: {
         title: '대기업김과장 | 자소서 & 면접 컨설팅',
         description: '대기업 최종합격을 이끄는 전문 첨삭 서비스',
-        url: 'https://kks-amber.vercel.app',
+        url: 'https://www.allpsn.com/',
         type: 'website',
     },
 };
